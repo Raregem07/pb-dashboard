@@ -72,7 +72,7 @@ class TimeForRateLimitMessage extends React.Component {
     };
     messageObj2 = {
       LINK: "",
-      MESSAGE: `This cycle continues till process is completed. Open ProfileMate in new tab to do some other work`,
+      MESSAGE: `This cycle continues till process is completed. Open ProfileBuddy in new tab to do some other work`,
       LEVEL: "info"
     };
     if (this.props.sleepArgs && this.props.sleepArgs.isSolvedByVPN) {

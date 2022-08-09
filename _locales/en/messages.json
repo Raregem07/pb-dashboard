@@ -1,39 +1,4 @@
-/*global chrome*/
-
-import ChangeCase from "../ChangeCase";
-import { Tooltip } from "antd";
-import React from "react";
-import LanguageCaseEnum from "../models/LanguageCaseEnum";
-
-function getFromChrome(key) {
-  if (process.env.NODE_ENV !== "development") {
-    return chrome.i18n.getMessage(key);
-  } else {
-    return localTranslations[key]["message"];
-  }
-}
-
-function I18(key, languageCase = LanguageCaseEnum.CAMEL_CASE, tooltip = false, tooltipPlacement="right") {
-  let keyInSmall = key
-    .split(" ")
-    .join("_")
-    .toLowerCase();
-  let text = getFromChrome(keyInSmall);
-  let valueToReturn = ChangeCase(text , languageCase);
-
-  if (tooltip) {
-    let text = getFromChrome(keyInSmall+"_tooltip");
-    let tooltipValue = ChangeCase(text , languageCase);
-    return (
-      <Tooltip title={tooltipValue} placement={tooltipPlacement}>
-        <span>{valueToReturn}</span>
-      </Tooltip>
-    );
-  }
-  return <span>{valueToReturn}</span>;
-}
-
-const localTranslations = {
+{
   "automation": {
     "message": "Automation"
   },
@@ -161,7 +126,7 @@ const localTranslations = {
     "message": "Posts/Users Fetching Status"
   },
   "post_fetching_status_tooltip": {
-    "message": "Used in automation. If circle is rotating, then ProfileBuddy is fetching posts and users for automation based on the criteria you set"
+    "message": "Used in automation. If circle is rotating, then Profilebud is fetching posts and users for automation based on the criteria you set"
   },
   "dead_followers": {
     "message": "Dead Followers"
@@ -170,13 +135,10 @@ const localTranslations = {
     "message": "Show the list of all your followers who have never liked/commented any of your post so far. You can mass Unfollow them also to increase engagement"
   },
   "trial_over_message":  {
-    "message": "ProfileBuddy Subscription Expired. Buy ProfileBuddy to keep sky rocketing your growth"
+    "message": "ProfileBud Subscription Expired. Buy Profilebud to keep sky rocketing your growth"
   },
   "analytics_trial_over_message": {
-    "message": "ProfileBuddy \"Analytics\" Subscription Expired. Buy ProfileBuddy to keep using analytics and sky rocket your growth"
-  },
-  "engage_trial_over_message": {
-    "message": "ProfileBuddy \"Targeted Engagemenet\" Subscription Expired. Buy ProfileBuddy to keep using targeted engagement and sky rocket your growth"
+    "message": "ProfileBud \"Analytics\" Subscription Expired. Buy Profilebud to keep using analytics and sky rocket your growth"
   },
   "split_image": {
     "message": "Split Image"
@@ -189,6 +151,9 @@ const localTranslations = {
   },
   "settings_tooltip": {
     "message": "Set the basic settings like automation sleed here"
+  },
+  "engage_trial_over_message": {
+    "message": "ProfileBud \"Targeted Engagemenet\" Subscription Expired. Buy Profilebud to keep using targeted engagement and sky rocket your growth"
   },
   "errors": {
     "message": "Errors"
@@ -225,7 +190,5 @@ const localTranslations = {
   },
   "generate_content": {
     "message": "Generate Content"
-  },
-};
-
-export default I18;
+  }
+}

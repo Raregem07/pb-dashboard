@@ -27,7 +27,7 @@ function ShowHashtags(props) {
       /></Col>
       <Col span={8}>
         <DownloadFileInExcel
-          filename={"Hashtags_Summary_by_ProfileMate"}
+          filename={"Hashtags_Summary_by_ProfileBuddy"}
           columns={columns}
           data={downloadData}
           blueButton={false}

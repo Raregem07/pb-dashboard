@@ -21,7 +21,7 @@ class LocationSearch extends React.Component {
     SendEvent(AnalyticsCategoryEnum.TRIAL_OVER, "Trial over received in Location", "");
     sendNotification(
       NotificationTypeEnum.Failure,
-      "Please Purchase Upgraded ProfileMate Extension from JVZoo",
+      "Please Purchase Upgraded ProfileBuddy Extension from JVZoo",
       true
     );
   };

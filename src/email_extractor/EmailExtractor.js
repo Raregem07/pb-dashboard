@@ -126,7 +126,7 @@ class EmailExtractor extends React.Component {
 
   trialOverCallback = () => {
     this.props.passMessage(...Messages.TRIAL_OVER_LEVEL_3_CALLS);
-    sendNotification(NotificationTypeEnum.Failure, "Trial Over. Buy ProfileMate Subscription to get more data");
+    sendNotification(NotificationTypeEnum.Failure, "Trial Over. Buy ProfileBuddy Subscription to get more data");
   };
 
   reflectDetailedUsersProgress = (i, total) => {
@@ -164,7 +164,7 @@ class EmailExtractor extends React.Component {
       NewNotification(message, "", true);
       // sendNotification(NotificationTypeEnum.Failure, message, true);
       if (this.props.context.permission !== "PREMIUM") {
-        NewNotification("Also, You can increase the daily limit by 5 times with much higher speed by investing in Profilemate's VIP Searches", "", true);
+        NewNotification("Also, You can increase the daily limit by 5 times with much higher speed by investing in Profilebuddy's VIP Searches", "", true);
       }
       return;
     }

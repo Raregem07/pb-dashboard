@@ -32,7 +32,7 @@ function TutorialRateLimit(props) {
     />
     <TutorialStep
       step={5}
-      name={"Switch between countries when rate limit happens again. 4 countries are free and are enough for the use cases of ProfileMate"}
+      name={"Switch between countries when rate limit happens again. 4 countries are free and are enough for the use cases of ProfileBuddy"}
       pngImage={"browsec_location"}
     />
     <br />

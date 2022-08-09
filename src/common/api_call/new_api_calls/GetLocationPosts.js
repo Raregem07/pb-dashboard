@@ -36,7 +36,7 @@ async function getLocationPosts(locationPK, nextPage = null) {
       return { posts: [], nextPageToken: nextPage, topPosts: []};
     }
     let detailedError = "Rate Limit on getting location posts for a user";
-    let error = new ApiError(e, detailedError, "ProfileMate automatically handles rate limiting by instagram. Wait for some time and the process will start again");
+    let error = new ApiError(e, detailedError, "ProfileBuddy automatically handles rate limiting by instagram. Wait for some time and the process will start again");
     // sendNotification(NotificationTypeEnum.Failure, `Rate Limited | Grambuddy automatically handles rate limiting by instagram. Wait for some time and the process will start again`, true);
     await SaveError(error);
 

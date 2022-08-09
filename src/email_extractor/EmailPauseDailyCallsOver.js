@@ -20,7 +20,7 @@ class EmailPauseDailsCallsOver extends React.Component {
     }
 
     if (!this.props.isPremium) {
-      notificationLine = `You can upgrade this limit & speed by 5 times by investing in ProfileMate's VIP Searches`;
+      notificationLine = `You can upgrade this limit & speed by 5 times by investing in ProfileBuddy's VIP Searches`;
     }
 
     this.notificationLine = notificationLine;
@@ -80,7 +80,7 @@ class EmailPauseDailsCallsOver extends React.Component {
                 {/*    paddingBottom: "1%"*/}
                 {/*  }}*/}
                 {/*>*/}
-                {/*  You can purchase <strong>Profilemate's Supercharged searches</strong> to get much more users. <br />*/}
+                {/*  You can purchase <strong>Profilebuddy's Supercharged searches</strong> to get much more users. <br />*/}
                 {/*  Else, you can change your Connected Instagram Account from Members' area and use any other Instagram account.*/}
                 {/*</div>*/}
               </Card>

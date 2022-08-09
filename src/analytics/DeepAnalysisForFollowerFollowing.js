@@ -98,7 +98,7 @@ class DeepAnalysisForFollowerFollowing extends React.Component {
       if (callsData.level3Calls >= callsData.level3AllowedCalls) {
         SendEvent(AnalyticsCategoryEnum.DETAILED_USERS, `Already scraped max users ${callsData.level3AllowedCalls}`, "");
         this.props.passMessage(...Messages.MAX_USERS_SCRAPED_TOTAL);
-        sendNotification(NotificationTypeEnum.Failure, `Max users ${callsData.level3AllowedCalls} scraped. Purchase ProfileMate to continue & unlock full power`, true);
+        sendNotification(NotificationTypeEnum.Failure, `Max users ${callsData.level3AllowedCalls} scraped. Purchase ProfileBuddy to continue & unlock full power`, true);
         return;
       }
 

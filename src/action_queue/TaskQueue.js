@@ -161,7 +161,7 @@ class TaskQueue extends React.Component {
     }
 
     let downloadData = this.getDownloadTasksData();
-    let filename = "best_tasks_to_perform_by_profilemate";
+    let filename = "best_tasks_to_perform_by_profilebuddy";
     let columns = [
       {label: "Task Type", value: "type"},
       {label: "Username", value: "username"},

@@ -35,7 +35,7 @@ class Faq extends React.Component {
         >
           <ul>
             <li>
-              <a href="https://profilemate.wordpress.com/2020/10/02/limits-per-day-for-profilemate/" target="_blank">What are limits per day with Profilemate?</a><br />
+              <a href="https://profilemate.wordpress.com/2020/10/02/limits-per-day-for-profilemate/" target="_blank">What are limits per day with Profilebuddy?</a><br />
             </li>
             <li>
               <a href="https://profilemate.wordpress.com/2020/10/02/how-to-rotate-instagram-accounts-to-reset-limits-in-profilemate/" target="_blank">How to Reset Per day limits and get more Users in a day??</a><br />
@@ -44,7 +44,7 @@ class Faq extends React.Component {
               <a href="https://profilemate.wordpress.com/2020/10/01/extract-list-of-followers-of-any-instagram-account/" target="_blank">How to Extract List of Followers and handling cooldown?</a><br />
             </li>
             <li>
-              <a href="https://profilemate.wordpress.com/2020/10/01/extract-3x-more-emails-using-profilemate/" target="_blank">Analyse More than 2k users with FrontEnd Profilemate?</a><br />
+              <a href="https://profilemate.wordpress.com/2020/10/01/extract-3x-more-emails-using-profilemate/" target="_blank">Analyse More than 2k users with FrontEnd Profilebuddy?</a><br />
             </li>
             <li>
               <a href="https://profilemate.wordpress.com/2020/10/02/how-to-use-whitelabel-for-profilemate/" target="_blank">How to use Whitelabel?</a><br />

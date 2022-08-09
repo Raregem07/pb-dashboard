@@ -25,7 +25,7 @@ function Tutorial(props) {
       We have all our Tutorial blogs with a step by step Explanation <a
       href={ApplicationConstants.MEDIUM_BLOG} target="_blank"> here </a>. <br />
       <br />
-      Or Visit Member's area of Profilemate <a
+      Or Visit Member's area of Profilebuddy <a
       href={ApplicationConstants.MEMBERS_AREA} target="_blank">here</a> to see "How to Use" and "Premium Training"
     </div>
     {/*<div style={{*/}

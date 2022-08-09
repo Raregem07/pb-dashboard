@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll/modules";
 import ReactGA from "react-ga";
 import AnalyticsCategoryEnum from "../../common/constants/AnalyticsCategoryEnum";
-import grambuddyLogo from "../../common/images/profilemate_logo.png";
+import grambuddyLogo from "../../common/images/profilebuddy_logo.png";
 import ApplicationConstants from "../../common/constants/ApplicationConstants";
 import SendEvent from "../../common/Helpers/SendEvent";
 import FeatureDetails from "../FeatureDetails";

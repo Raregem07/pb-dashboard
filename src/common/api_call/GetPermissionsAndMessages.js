@@ -43,7 +43,7 @@ async function GetPermissionsAndMessages(userID, appVersion) {
         },
         maxFreeUsers: 500,
         maxDailyEmailLimits: 10000,
-        faq: "## [What are Limits per day with Profilemate](https://www.profilebuddy.io/2020/10/02/limits-per-day-for-profilebuddy/) \n \n ## [How to Reset Per day limits and get more Users in a day]( https://www.profilebuddy.io/2020/10/02/how-to-rotate-instagram-accounts-to-reset-limits-in-profilebuddy/) \n \n  ## [Extract List of Followers and handling cooldown](https://www.profilebuddy.io/2020/10/01/extract-list-of-followers-of-any-instagram-account/) \n \n  ## [Analyse More than 2k users with FE Profilemate](https://www.profilebuddy.io/2020/10/01/extract-3x-more-emails-using-profilebuddy/) \n \n ## [How to use Whitelabel]( https://www.profilebuddy.io/2020/10/02/how-to-use-whitelabel-for-profilebuddy/)"      }
+        faq: "## [What are Limits per day with Profilebuddy](https://www.profilebuddy.io/2020/10/02/limits-per-day-for-profilebuddy/) \n \n ## [How to Reset Per day limits and get more Users in a day]( https://www.profilebuddy.io/2020/10/02/how-to-rotate-instagram-accounts-to-reset-limits-in-profilebuddy/) \n \n  ## [Extract List of Followers and handling cooldown](https://www.profilebuddy.io/2020/10/01/extract-list-of-followers-of-any-instagram-account/) \n \n  ## [Analyse More than 2k users with FE Profilebuddy](https://www.profilebuddy.io/2020/10/01/extract-3x-more-emails-using-profilebuddy/) \n \n ## [How to use Whitelabel]( https://www.profilebuddy.io/2020/10/02/how-to-use-whitelabel-for-profilebuddy/)"      }
     };
   }
 
@@ -71,7 +71,7 @@ async function GetPermissionsAndMessages(userID, appVersion) {
     let detailedError = "Error in getting Permissions from profilebuddy server";
     let error = new ApiError(e, detailedError, "Check if your internet is working else please send a mail to support@grambuddy.com for the support. We will get back to you super soon");
     // sendNotification(NotificationTypeEnum.Failure, `Check if your internet is working else please send a mail to support@grambuddy.com for the support. We will get back to you super soon`, true);
-    SendEvent("PERMISSIONS_API_FAILED", "Profilemate permission & messages", `Status_Code: ${error.status}`);
+    SendEvent("PERMISSIONS_API_FAILED", "Profilebuddy permission & messages", `Status_Code: ${error.status}`);
 
     return {
       isSuccess: false,

@@ -9,7 +9,7 @@ function TutorialAnalyseUserPosts(props) {
   return <React.Fragment>
     <TutorialHeading heading="User's Posts' Statistics"/>
     <TutorialDescription
-      text="Instagram removed the like count feature? But, ProfileMate can still show you the like count, engagement rate, comment count and an option to download the posts for any user"
+      text="Instagram removed the like count feature? But, ProfileBuddy can still show you the like count, engagement rate, comment count and an option to download the posts for any user"
     />
     <TutorialStep
       step={1}

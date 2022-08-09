@@ -74,7 +74,7 @@ export class Home extends React.Component {
 
   setupBeforeUnloadListener = () => {
     window.addEventListener("beforeunload", (ev) => {
-      ev.returnValue = `You would lose the data. Open ProfileMate in another tab by pressing the extension button again.`;
+      ev.returnValue = `You would lose the data. Open ProfileBuddy in another tab by pressing the extension button again.`;
     });
   };
 
@@ -179,7 +179,7 @@ export class Home extends React.Component {
               {" "}
               Please check your internet connection. Reload a few times and this error will go. Else Uninstall and Install the extension again.
               <br />
-              Else install this free VPN <a href={"https://chrome.google.com/webstore/detail/browsec-vpn-free-vpn-for/omghfjlpggmjjaagoclmmobgdodcjboh?hl=en"} target="_blank">Browsec</a> and run it and then open and close Profilemate again
+              Else install this free VPN <a href={"https://chrome.google.com/webstore/detail/browsec-vpn-free-vpn-for/omghfjlpggmjjaagoclmmobgdodcjboh?hl=en"} target="_blank">Browsec</a> and run it and then open and close Profilebuddy again
             </div>
           ) : (
             <div/>

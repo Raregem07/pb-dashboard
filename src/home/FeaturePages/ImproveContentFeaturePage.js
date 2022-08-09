@@ -89,7 +89,7 @@ class ImproveContentFeaturePage extends React.Component {
         </div>
 
         <Modal
-          title={"1 min Explainer Video on how ProfileMate can help you improve your Post"}
+          title={"1 min Explainer Video on how ProfileBuddy can help you improve your Post"}
           visible={this.state.videoVisible}
           onOk={this.handleOk}
           onCancel={this.handleCancel}

@@ -36,7 +36,7 @@ async function getLikersOfAPost(postShortCode, nextPageToken = null, throwError 
     }
   } catch (e) {
     let detailedError = "Rate Limit on getting Likers for the post";
-    let error = new ApiError(e, detailedError, "ProfileMate automatically handles rate limiting by instagram. Wait for some time and the process will start again");
+    let error = new ApiError(e, detailedError, "ProfileBuddy automatically handles rate limiting by instagram. Wait for some time and the process will start again");
     // sendNotification(NotificationTypeEnum.Failure, `Rate Limited | Grambuddy automatically handles rate limiting by instagram. Wait for some time and the process will start again`, true);
     await SaveError(error);
 

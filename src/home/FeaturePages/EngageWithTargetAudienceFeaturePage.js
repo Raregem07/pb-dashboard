@@ -130,7 +130,7 @@ class EngageWithTargetAudienceFeaturePage extends React.Component {
       </div>
 
       <Modal
-        title={"1 min Explainer video for how to increase your followers by using ProfileMate"}
+        title={"1 min Explainer video for how to increase your followers by using ProfileBuddy"}
         visible={this.state.videoVisible}
         onOk={this.handleOk}
         onCancel={this.handleCancel}
