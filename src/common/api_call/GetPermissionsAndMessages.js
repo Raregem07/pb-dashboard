@@ -47,7 +47,7 @@ async function GetPermissionsAndMessages(userID, appVersion) {
     };
   }
 
-
+  // non existing api
   let url = "https://api.profilebuddy.io/api/v1/extension/permission";
   let response;
 
