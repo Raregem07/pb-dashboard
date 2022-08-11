@@ -5,9 +5,11 @@ import Typewriter from "typewriter-effect";
 
 
 class NewMessageDisplayer extends React.Component{
-
   render() {
     let messageObj = this.props.messageObj;
+    //stevess
+    console.log(messageObj);
+
     let level = messageObj.LEVEL;
     let message = messageObj.MESSAGE;
     if (message.length === 0) {

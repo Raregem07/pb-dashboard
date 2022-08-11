@@ -230,7 +230,8 @@ class Analytics extends React.Component {
 
 
   render() {
-
+    //steve
+    console.log(this.props.context);
     return (
       <div>
         <Prompt

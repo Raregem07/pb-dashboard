@@ -97,41 +97,41 @@ export class Home extends React.Component {
     });
     await GetOrSetValue(DatabaseKeys.SADAM_CALLS_LEFT, 0);
     console.log(userID);
-    // let permissionsExpiryAndMessagesObj = await GetPermissionsAndMessages(
-    //   userID,
-    //   ApplicationConstants.APP_VERSION
-    // );
+    let permissionsExpiryAndMessagesObj = await GetPermissionsAndMessages(
+      userID,
+      ApplicationConstants.APP_VERSION
+    );
 
 
-    // if (!permissionsExpiryAndMessagesObj.isSuccess && permissionsExpiryAndMessagesObj.retry) {
-    //   sendNotification(NotificationTypeEnum.Failure, "Please check your internet connection | Retrying ...");
-    //   await sleep(5000);
-    //   window.location.reload();
-    //   return;
-    // }
+    if (!permissionsExpiryAndMessagesObj.isSuccess && permissionsExpiryAndMessagesObj.retry) {
+      sendNotification(NotificationTypeEnum.Failure, "Please check your internet connection | Retrying ...");
+      await sleep(5000);
+      window.location.reload();
+      return;
+    }
 
-    // if (!permissionsExpiryAndMessagesObj.isSuccess && permissionsExpiryAndMessagesObj.error === "NO_PERMISSION") {
-    //   sendNotification(NotificationTypeEnum.Failure, `Instagram account @${this.state.username} does not have permission`);
-    //   this.setState({
-    //     firstApiCallDone: true,
-    //     errorHappened: true,
-    //     errorReason: permissionsExpiryAndMessagesObj.error,
-    //     username: username
-    //   });
-    //   return;
-    // }
+    if (!permissionsExpiryAndMessagesObj.isSuccess && permissionsExpiryAndMessagesObj.error === "NO_PERMISSION") {
+      sendNotification(NotificationTypeEnum.Failure, `Instagram account @${this.state.username} does not have permission`);
+      this.setState({
+        firstApiCallDone: true,
+        errorHappened: true,
+        errorReason: permissionsExpiryAndMessagesObj.error,
+        username: username
+      });
+      return;
+    }
 
 
-    // if (!permissionsExpiryAndMessagesObj.isSuccess) {
-    //   sendNotification(NotificationTypeEnum.Failure, "Something went wrong");
-    //   this.setState({
-    //     firstApiCallDone: true,
-    //     errorHappened: true,
-    //     errorReason: permissionsExpiryAndMessagesObj.error,
-    //     username: username
-    //   });
-    //   return;
-    // }
+    if (!permissionsExpiryAndMessagesObj.isSuccess) {
+      sendNotification(NotificationTypeEnum.Failure, "Something went wrong");
+      this.setState({
+        firstApiCallDone: true,
+        errorHappened: true,
+        errorReason: permissionsExpiryAndMessagesObj.error,
+        username: username
+      });
+      return;
+    }
 
     clearTimeout(this.timer);
 
