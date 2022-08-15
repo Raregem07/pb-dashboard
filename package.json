@@ -45,7 +45,7 @@
     "youtube-thumbnail": "^1.3.0"
   },
   "scripts": {
-    "start": "set HTTPS=true&&set SSL_CRT_FILE=./cert.pem&&set SSL_KEY_FILE=./nopass.pem&&react-scripts start",
+    "start": "set PORT=3001 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

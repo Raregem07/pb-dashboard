@@ -135,13 +135,8 @@ export class Home extends React.Component {
 
     clearTimeout(this.timer);
 
-    // let permissionsExpiryAndMessages = permissionsExpiryAndMessagesObj.value;
-    let permissionsExpiryAndMessages = {
-      timeRemaining: 1000000000000000,
-      detailedCallsRemaining: {
-        test: "test"
-      }
-    }
+    let permissionsExpiryAndMessages = permissionsExpiryAndMessagesObj.value;
+
     await SaveObject(DatabaseKeys.SADAM_CALLS_LEFT, permissionsExpiryAndMessages.detailedCallsRemaining);
     this.setState({
       firstApiCallDone: true,

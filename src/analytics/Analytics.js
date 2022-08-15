@@ -231,7 +231,7 @@ class Analytics extends React.Component {
 
   render() {
     //steve
-    console.log(this.props.context);
+    const { mainMessages } = this.props.context
     return (
       <div>
         <Prompt
@@ -244,10 +244,13 @@ class Analytics extends React.Component {
           timeInSecondsBeforeFollowerScrape={this.state.timeInSecondsBeforeFollowerScrape}
         />
 
-        {this.props.context.mainMessages.follower_following === "" ? <React.Fragment/> :
+        {mainMessages && mainMessages.follower_following 
+          ?           
           <div className="main-message">
-            <ReactMarkdown source={this.props.context.mainMessages.follower_following}/>
-          </div>
+            <ReactMarkdown source={mainMessages.follower_following}/>
+          </div> 
+          :
+          <React.Fragment/>
         }
 
 

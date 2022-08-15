@@ -1,3 +1,5 @@
+/* eslint-disable default-case */
+/* eslint-disable no-useless-constructor */
 import React from "react";
 import FeatureDetails from "./FeatureDetails";
 import FeaturePageHeading from "./FeaturePages/common/FeaturePageHeading";
@@ -543,15 +545,18 @@ class MainPageWrapper extends React.Component {
         <br/>
         <AppContext.Consumer>
           {value => {
-            let [
-              _details,
-              _crumbs,
-              messageObjToShow
-            ] = this.getDetailsFromPathname(
-              this.props.location.pathname,
-              value.messages
-            );
-            return <NewMessageDisplayer messageObj={messageObjToShow}/>;
+            if(value.messages) {
+              let [
+                _details,
+                _crumbs,
+                messageObjToShow
+              ] = this.getDetailsFromPathname(
+                this.props.location.pathname,
+                value.messages
+              );
+              return <NewMessageDisplayer messageObj={messageObjToShow}/>;
+            }
+            return <React.Fragment />
           }}
         </AppContext.Consumer>
 
