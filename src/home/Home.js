@@ -96,7 +96,7 @@ export class Home extends React.Component {
       level3AllowedCalls: 0
     });
     await GetOrSetValue(DatabaseKeys.SADAM_CALLS_LEFT, 0);
-
+    console.log(userID);
     let permissionsExpiryAndMessagesObj = await GetPermissionsAndMessages(
       userID,
       ApplicationConstants.APP_VERSION

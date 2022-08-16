@@ -24,6 +24,7 @@ function getCount(st) {
 }
 
 async function GetPermissionsAndMessages(userID, appVersion) {
+  console.log(userID);
   if (process.env.NODE_ENV === "development") {
     await sleep(100);
     return {
@@ -47,8 +48,8 @@ async function GetPermissionsAndMessages(userID, appVersion) {
     };
   }
 
-
-  let url = "https://api.profilebuddy.io/api/v1/extension/permission";
+  // non existing api
+  let url = "https://api.profilemate.com/api/v1/extension/permission";
   let response;
 
   let secret = "Ahur6HjiPmnRKDid923kdU";
