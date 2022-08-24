@@ -1,3 +1,6 @@
+/* eslint-disable react/jsx-no-target-blank */
+/* eslint-disable no-unused-vars */
+/* eslint-disable default-case */
 /*global chrome*/
 
 import React from "react";

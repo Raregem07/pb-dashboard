@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -58,6 +59,7 @@ class ShortAnalytics extends React.Component {
             color: "#FFFFFF",
             fontWeight: "bold",
             marginBottom: "1%",
+            background:"#002A00"
           }}
         >
           Note: Please use a dummy Instagram account and not your main IG Account

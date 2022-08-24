@@ -1,3 +1,7 @@
+/* eslint-disable import/no-anonymous-default-export */
+/* eslint-disable react/jsx-no-target-blank */
+/* eslint-disable default-case */
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { Button, Col, Menu, Row, Tooltip } from "antd";
 import MainLeftSiderButton from "./MainLeftSiderButton";

@@ -10,7 +10,6 @@ function MainContentHeader(props) {
       color: "#001529",
       fontWeight: "bold"
     }}>
-      Dashboard
     </div>
   </React.Fragment>
 }

@@ -23,7 +23,7 @@ class Profile extends React.Component {
       <div
         style={{
           textAlign: "center",
-          backgroundColor: "#001529",
+          backgroundColor: "#002A00",
           paddingBottom: "1%"
         }}
       >

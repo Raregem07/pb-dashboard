@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-constructor */
 import React from "react";
 import MainContentHeader from "./MainContentHeader";
 import WelcomeContent from "./WelcomeContent";

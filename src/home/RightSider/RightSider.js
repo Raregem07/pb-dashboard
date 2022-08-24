@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import Profile from "./Profile";
 import ShortAnalytics from "./ShortAnalytics";
@@ -35,7 +36,7 @@ class RightSider extends React.Component {
               textAlign: "right",
               color: "white",
               paddingRight: 8,
-              backgroundColor: "#001529"
+              backgroundColor: "#002A00"
             }}
           >
             v5.0.0

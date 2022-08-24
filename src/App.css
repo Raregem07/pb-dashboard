@@ -59,6 +59,7 @@
 }
 
 .left-sider-main-box {
+    display: none;
     background-color: #FFFFFF;
     background-repeat: no-repeat;
     background-origin: padding-box;
@@ -81,11 +82,12 @@
 }
 
 .right-sider-profile {
-    background-color: #010B14;
+    background-color: #002A00;
 }
 
-.right-sider-favourites {
-}
+/* .right-sider-favourites {
+    
+} */
 
 .right-sider-short-analytics-caraousel {
     margin-top: 2%;

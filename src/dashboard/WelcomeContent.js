@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import getMainUser from "../common/chrome/GetMainUser";
 import Typewriter from 'typewriter-effect';
@@ -13,18 +14,17 @@ class WelcomeContent extends React.Component {
   render() {
     return <React.Fragment>
       <div style={{
-        width: "93%",
+        width: "66%",
         backgroundColor: "white",
-        marginTop: "1%",
-        marginLeft: "4%",
-        fontSize: "165%",
+        margin: "20px auto 0",
+        fontSize: "155%",
         paddingTop: "1.2%",
         paddingLeft: "2%",
         paddingBottom: "2%",
         boxShadow: "0px 3px 6px #00000029",
         borderRadius: 11,
         font: "Medium 32px/38px Roboto",
-        color: "#707070"
+        color: "black"
       }}>
         <div>
           <Typewriter

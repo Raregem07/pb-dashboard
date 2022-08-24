@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import tier3 from "../common/images/tier_3_email.png";
 
@@ -504,7 +505,7 @@ const FeatureDetails = {
         }
       },
       COLOR_CODE: "#3EB2FF",
-      CARD_COLOR: "#3EB2FF",
+      CARD_COLOR: "#086836",
       TEXT: "View any other Account's Analytics",
       ACTION: "/analytics/other",
       FEATURE_PAGE_HEADING: "Analyse other Instagram accounts",
