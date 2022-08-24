@@ -1,3 +1,5 @@
+/* eslint-disable array-callback-return */
+/* eslint-disable default-case */
 import DetailedUser from "../../models/DetailedUser";
 import sleep from "../../Sleep";
 import axios from "axios";

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { Col, Divider, Row } from "antd";
 import DashboardCard from "./DashboardCard";
@@ -14,10 +15,10 @@ function DashboardCards(props) {
 
   return (
     <React.Fragment>
-      <Row style={{ marginLeft: "2%", marginTop: "2%", marginRight: "2%"}} >
-        <Col span={2} />
-        <Col span={7}>
-          <div className="steps-above-card">
+      <div style={{ marginLeft: "2%", marginTop: "2%", marginRight: "2%"}} >
+        
+        <div>
+          <div className="steps">
             Step 1
           </div>
           <Link
@@ -44,8 +45,8 @@ function DashboardCards(props) {
               />
             </div>
           </Link>
-        </Col>
-        <Col span={6} style={{textAlign: "center"}}>
+        </div>
+        {/* <Col span={6} style={{textAlign: "center"}}>
           <div style={{
             marginTop: "20vh",
           }}>
@@ -62,10 +63,10 @@ function DashboardCards(props) {
           }}>
             <img src={arrow} height={"15%"} width={"15%"}  alt="arrow"/>
           </div>
-        </Col>
+        </Col> */}
 
-        <Col span={7}>
-          <div className="steps-above-card">
+        <div>
+          <div className="steps">
             Step 2
           </div>
           <Link
@@ -92,9 +93,18 @@ function DashboardCards(props) {
               />
             </div>
           </Link>
-        </Col>
-      </Row>
+        </div>
+      </div>
       <br />
+      <style jsx>{`
+            .steps {
+              width: 70%;
+              margin: 0 auto;
+              font-size: 25px;
+              font-weight: bold;
+              padding: 15px 0;
+            }
+      `}</style>
     </React.Fragment>
   );
 }

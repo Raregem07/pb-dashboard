@@ -12,7 +12,7 @@ class MostUsedFeatures extends React.Component {
     return (
       <React.Fragment>
         <div className="center">
-          <div
+          {/* <div
             style={{
               fontSize: "160%",
               fontWeight: "bold",
@@ -22,9 +22,9 @@ class MostUsedFeatures extends React.Component {
             }}
           >
             Most Used Features
-          </div>
+          </div> */}
 
-          <div style={{ marginTop: "3%" }}>
+          <div style={{ marginTop: "20px" }}>
             <Feature
               selectedKeys={selectedKeys}
               action={FeatureDetails.ANALYTICS.OTHER.FEATURES.HASHTAG.ACTION}

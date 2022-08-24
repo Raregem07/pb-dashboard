@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import FeatureList from "./FeatureList";
 import FeatureDetails from "../home/FeatureDetails";
@@ -16,10 +17,22 @@ function DashboardCard(props) {
   if (props.title === `${FeatureDetails.TIER_2.MAIN_CARD.TITLE}`) {
     paddingTop = "5%";
     iconPaddingTop = "9%";
-    icon = <img src={props.img} alt="main_icon_image" height={"15%"} width={"30%"}/>;
+    icon = <img src={props.img} alt="main_icon_image" height={"15%"} width={"50%"}/>;
   }
   return <React.Fragment>
-    <div
+    <div className="cardWrapper">
+      <div style={{background:"#006601",padding:"15px 30px", marginLeft:"50px", borderRadius:"8px"}}>
+        <div>{icon}</div>
+        <div style={{fontSize:"20px",fontWeight:"bold",color:"white"}}>{props.title}</div>
+      </div>
+      <div>
+        <FeatureList
+            features={props.features}
+            oneIcon={props.oneIcon}
+          />
+      </div>
+    </div>
+    {/* <div
       style={{
         width: "100%",
         backgroundColor: "#FFF",
@@ -69,7 +82,19 @@ function DashboardCard(props) {
       {/*<div className="center" style={{marginRight: "4%", marginLeft: "4%", paddingBottom: "1.3%"}}>*/}
 
       {/*</div>*/}
-    </div>
+    {/* </div> */} 
+    <style jsx>{`
+        .cardWrapper {
+          display: flex;
+          padding: 30px;
+          gap: 100px;
+          justify-content: flex-start;
+          align-items: center;
+          background: linear-gradient(to right, #FFF, #33814B, #1D713F);
+          width: 70%;
+          margin: 0 auto;
+        }
+    `}</style>
   </React.Fragment>;
 }
 

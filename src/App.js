@@ -6,6 +6,7 @@ import ApplicationConstants from "./common/constants/ApplicationConstants";
 import getMainUser from "./common/chrome/GetMainUser";
 import ErrorBoundary from "./common/components/ErrorBoundary";
 import ReactGA from "react-ga";
+import Navbar from "./components/Navbar";
 
 
 class App extends React.Component {
@@ -33,6 +34,7 @@ class App extends React.Component {
   render() {
     const WrappedHome = withRouter(props => (
       <ErrorBoundary page="home page">
+        <Navbar />
         <Home
           {...props} />
       </ErrorBoundary>
