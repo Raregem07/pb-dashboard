@@ -11,7 +11,7 @@ import SendEvent from "../../../common/Helpers/SendEvent";
 function AnalyticsMainPageCards(props) {
   return (
     <div className="center">
-      <Row style={{ marginLeft: "3%", marginRight: "1%", textAlign: "center" }}>
+      <Row style={{ marginLeft: "3%", marginRight: "1%", textAlign: "center", marginBottom: "100px" }}>
         <Col span={12} style={{textAlign: "center"}}>
           <Link
             className="link"

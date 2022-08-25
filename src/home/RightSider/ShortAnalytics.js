@@ -54,12 +54,13 @@ class ShortAnalytics extends React.Component {
           style={{
             font: "Black 32px/38px Roboto",
             fontSize: "120%",
-            margin: "2%",
+            margin: "20% 2% 2%",
             padding: "2%",
             color: "#FFFFFF",
-            fontWeight: "bold",
+            fontWeight: "400",
             marginBottom: "1%",
-            background:"#002A00"
+            background:"#002A00",
+            textAlign: "center"
           }}
         >
           Note: Please use a dummy Instagram account and not your main IG Account

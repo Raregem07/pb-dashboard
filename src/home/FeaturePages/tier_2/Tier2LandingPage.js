@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-useless-constructor */
 import React from 'react';
 import FeaturePageAnalyticsHeading from "../analytics/FeaturePageAnalyticsHeading";
 import FeaturePageAnalyticsNote from "../analytics/FeaturePageAnalyticsNote";
@@ -16,19 +18,19 @@ class Tier2LandingPage extends React.Component {
     const details = FeatureDetails.TIER_2;
 
     return <React.Fragment>
-      <FeaturePageAnalyticsHeading
+      {/* <FeaturePageAnalyticsHeading
         backgroundColor={details.COLOR_CODE}
         text={details.FEATURE_PAGE_HEADING}
-      />
+      /> */}
       {/*<FeaturePageAnalyticsNote*/}
       {/*  note={details.FEATURE_PAGE_NOTE}*/}
       {/*/>*/}
 
-      <div style={{ marginLeft: "3%", marginTop: "1%" }}>
-        <Breadcrumb style={{ fontSize: "150%", fontWeight: "bold" }}>
+      <div style={{ marginLeft: "3%", marginTop: "8%" }}>
+        <Breadcrumb style={{ fontSize: "145%", color:"black", fontWeight:"500" }}>
           <Breadcrumb.Item>
             <Link className="link" to={`/`}>
-              Home
+              Dashboard
             </Link>
           </Breadcrumb.Item>
           <Breadcrumb.Item>
