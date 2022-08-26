@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable default-case */
 /* eslint-disable no-useless-constructor */
 import React from "react";
@@ -45,7 +46,7 @@ class MainPageWrapper extends React.Component {
         details = FeatureDetails.ANALYTICS.OTHER.FEATURES.SIMILAR_ACCOUNT;
         tier = FeatureDetails.TIER_2_FEATURES.SIMILAR_ACCOUNT;
         crumbs.push({
-          name: "Home",
+          name: "Dashboard",
           action: "/"
         });
         crumbs.push({

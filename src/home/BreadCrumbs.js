@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function BreadCrumbs(props) {
   let crumbs = [<Breadcrumb.Item key="home_crumb">
     <Link className="link" to={"/"}>
-      Home
+      Dashboard
     </Link>
   </Breadcrumb.Item>].concat(props.crumbs.map(
     c => {

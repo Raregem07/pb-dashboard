@@ -71,7 +71,7 @@ class ImproveContentFeaturePage extends React.Component {
               <Breadcrumb style={{ fontSize: "150%", fontWeight: "bold" }}>
                 <Breadcrumb.Item>
                   <Link className="link" to={`/`}>
-                    Home
+                    Dashboard
                   </Link>
                 </Breadcrumb.Item>
                 <Breadcrumb.Item>Improve your Content</Breadcrumb.Item>
