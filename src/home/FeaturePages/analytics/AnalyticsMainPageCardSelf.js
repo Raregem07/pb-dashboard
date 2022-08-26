@@ -10,10 +10,10 @@ function AnalyticsMainPageCardSelf(props) {
   return (
     <React.Fragment>
       <div
+        className="analyticsMainCard"
         style={{
           width: "90%",
-
-          backgroundColor: props.backgroundColor,
+          backgroundColor: "#D6E865",
           borderRadius: 11
         }}
       >
@@ -41,6 +41,12 @@ function AnalyticsMainPageCardSelf(props) {
           {props.name}
         </div>
       </div>
+      <style jsx>{`
+        .analyticsMainCard:hover {
+          box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        
+      `}</style>
     </React.Fragment>
   );
 }

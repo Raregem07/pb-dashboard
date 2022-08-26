@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
+/* eslint-disable no-unused-vars */
 import React from "react";
 import DetailedAnalysisOfAccountIcon from "../../../common/icons/DetailedAnalysisOfAccountIcon";
 import FollowerFollowingIcon from "../../../common/icons/FollowerFollowingIcon";
@@ -25,6 +27,7 @@ import { Link } from "react-router-dom";
 import AnalyseUserLikerCommenterIcon from "../../../common/icons/AnalyseUserLikerCommenterIcon";
 import AnalysePostLikerCommenterIcon from "../../../common/icons/AnalysePostLikerCommenterIcon";
 import SendEvent from "../../../common/Helpers/SendEvent";
+import followersIcon from '../../../common/images/follower_following.png'; 
 
 
 function AnalyticsFeaturePageCard(props) {
@@ -36,9 +39,9 @@ function AnalyticsFeaturePageCard(props) {
   if (props.identifier === "profile_report") {
     icon = <DetailedAnalysisOfAccountIcon/>;
   } else if (props.identifier === "fans_and_brats_analysis") {
-    icon = <img src={commonFollower} alt="Split Image" height={72} width={72}/>;
+    icon = <img src={commonFollower} alt="Split Image" height={50} width={50}/>;
   } else if (props.identifier === "follower_following") {
-    icon = <FollowerFollowingIcon/>;
+    icon = <img src={followersIcon} alt="Split Image" height={72} width={72}/>;
   } else if (props.identifier === "dead_followers") {
     icon = <DeadFollowerIcon/>;
   } else if (props.identifier === "post_stats") {
@@ -52,17 +55,17 @@ function AnalyticsFeaturePageCard(props) {
   } else if (props.identifier === "related_hashtags") {
     icon = <RelatedHashtagsIcon/>;
   } else if (props.identifier === "giveaway_winner") {
-    icon = <img src={giveAwayWinner} alt="Giveaway winner" height={64} width={64}/>;
+    icon = <img src={giveAwayWinner} alt="Giveaway winner" height={50} width={50}/>;
   } else if (props.identifier === "heart_image") {
-    icon = <img src={heartTool} alt="Heart your Image tool" height={64} width={64}/>;
+    icon = <img src={heartTool} alt="Heart your Image tool" height={50} width={50}/>;
   } else if (props.identifier === "split_image_tool") {
     icon = <img src={splitImage} alt="Split Image" height={64} width={64}/>;
   } else if (props.identifier === "tasks_to_engage_with_audience") {
     icon = <TasksToEngageIcon/>;
   } else if (props.identifier === "sleep_stories") {
-    icon = <img src={sleepStories} alt="Split Image" height={66} width={66}/>;
+    icon = <img src={sleepStories} alt="Split Image" height={50} width={50}/>;
   } else if (props.identifier === "common_follower") {
-    icon = <img src={commonFollower} alt="Split Image" height={72} width={72}/>;
+    icon = <img src={commonFollower} alt="Split Image" height={50} width={50}/>;
   } else if (props.identifier === "set_configurations") {
     icon = <ConfigurationSettingsIcon/>;
   } else if (props.identifier === "get_tasks") {
@@ -70,18 +73,18 @@ function AnalyticsFeaturePageCard(props) {
   } else if (props.identifier === "completed_tasks") {
     icon = <CompletedTasksNewIcon/>;
   } else if (props.identifier === "detailed_usernames") {
-    icon = <img src={detailedUsernames} alt="Split Image" height={64} width={64}/>;
+    icon = <img src={detailedUsernames} alt="Split Image" height={50} width={50}/>;
   } else if (props.identifier === "hashtag") {
-    icon = <img src={hashtag} alt="Hashtag" height={64} width={64}/>;
+    icon = <img src={hashtag} alt="Hashtag" height={50} width={50}/>;
   } else if (props.identifier === "location") {
-    icon = <img src={location} alt="Location" height={64} width={64}/>;
+    icon = <img src={location} alt="Location" height={50} width={50}/>;
   } else if (props.identifier === "similar_account") {
-    icon = <img src={similarAccount} alt="Similar Account" height={64} width={64}/>;
+    icon = <img src={similarAccount} alt="Similar Account" height={50} width={50}/>;
   }
   // TODO Add Targeted leads icons
 
   let heightOfText = 80;
-  let width = "90%";
+  let width = "80%";
 
   if (isMostUsed) {
     mostUsedIcon =
@@ -103,11 +106,13 @@ function AnalyticsFeaturePageCard(props) {
         }}
       >
         <div
+        className="pageCard"
           style={{
             width: width,
-            backgroundColor: props.backgroundColor,
+            backgroundColor: "#006634",
             borderRadius: 11,
-            paddingBottom: "3%"
+            paddingBottom: "3%",
+            textALign: "center"
           }}
         >
 
@@ -126,7 +131,12 @@ function AnalyticsFeaturePageCard(props) {
                 textAlign: "center",
                 marginTop: 20,
                 marginRight: 8
-              }}>{icon}</div>
+              }}>
+                <div className="imgIcon">
+                  {icon}
+                </div>
+                
+              </div>
             </Col>
           </Row>
 
@@ -136,31 +146,33 @@ function AnalyticsFeaturePageCard(props) {
               font: "Black 26px/32px Roboto",
               color: "#FFF",
               textAlign: "center",
-              fontSize: 25,
+              fontSize: 16,
               fontWeight: "bold",
-
-              height: heightOfText,
               paddingTop: 16,
-              padding: 4
+              padding: "11px"
             }}
           >
             {props.name}
           </div>
           <div style={{
-            marginLeft: 12,
+            margin: "0 auto 15px",
             backgroundColor: "#FFF",
-            width: "90%",
+            width: "60%",
             textAlign: "center",
             borderRadius: 11,
-
-            color: props.backgroundColor,
+            color: "black",
             fontWeight: "bold",
-            fontSize: 28,
+            fontSize: 20,
           }}>
             GO
           </div>
         </div>
       </Link>
+      <style jsx>{`
+        .pageCard:hover {
+          box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+      `}</style>
     </React.Fragment>
   );
 }

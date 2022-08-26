@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
 import logoIcon from '../common/images/pb-logo.png';
+import accountIcon from '../common/images/account_icon.jpg';
 
 function Navbar() {
 
@@ -25,22 +26,22 @@ function Navbar() {
           </a>
         </div>
         <div>
-          <Link className="navlink" to="/">
+          <Link className="navlink" to="/" id={ window.location.hash === '#/' ? "focus" : "" }>
             DASHBOARD
           </Link>
         </div>
         <div>
-          <Link className="navlink" to="/faq">
+          <Link className="navlink" to="/faq" id={ window.location.hash === "#/faq" ? "focus" : "" }>
             FAQ
           </Link>
         </div>
         <div>
-          <Link className="navlink" to="/tutorial">
+          <Link className="navlink" to="/tutorial" id={ window.location.hash === "#/tutorial" ? "focus" : "" }>
             TRAINING
           </Link>
         </div>
         <div>
-          <Link className="navlink" to="/tools">
+          <Link className="navlink" to="/tools" id={ window.location.hash === "#/tools" ? "focus" : "" }>
             VIP BONUS
           </Link>
         </div>
@@ -49,7 +50,7 @@ function Navbar() {
           onClick={(e) => setIsDropdown(!isDropdown)}
         >
           <img
-            src="/account_icon.jpg"
+            src={accountIcon}
             className="accountIcon"
             alt="profile-buddy"
           />
@@ -76,6 +77,10 @@ function Navbar() {
             rgba(0, 31, 31),
             rgba(0, 29, 29)
           );
+          position: fixed;
+          width: 100%;
+          top: 0;
+          z-index: 9999;
         }
 
         .logo {
@@ -91,16 +96,11 @@ function Navbar() {
 
         .navlink {
           font-size: 16px;
-          font-weight: 500;
-          color: #6e8182;
-          padding: 11px;
+          font-weight: 400;
+          color: #ffff;
+          padding: 11px 18px;
         }
 
-        .navlink:focus {
-          color: black;
-          background: yellow;
-          border-radius: 8px;
-        }
 
         .navlink:hover:not(:focus) {
           color: yellow;
@@ -150,6 +150,13 @@ function Navbar() {
           text-decoration: none;
           color: #6e8182 !important;
           font-size: 19px;
+        }
+
+        #focus {
+          background: yellow;
+          border-radius: 8px;
+          pointer-events: none;
+          color: black;
         }
       `}</style>
     </nav>

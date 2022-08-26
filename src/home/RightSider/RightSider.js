@@ -31,19 +31,21 @@ class RightSider extends React.Component {
     return (
       <React.Fragment>
         <div className="right-sider-profile">
+          
+          <Profile />
+          
+
+          <ShortAnalytics />
           <div
             style={{
-              textAlign: "right",
+              textAlign: "left",
               color: "white",
-              paddingRight: 8,
+              paddingLeft: 8,
               backgroundColor: "#002A00"
             }}
           >
             v5.0.0
           </div>
-          <Profile />
-
-          <ShortAnalytics />
         </div>
         <div>
           <MostUsedFeatures location={this.props.location} />
