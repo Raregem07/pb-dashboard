@@ -23,7 +23,7 @@ function TasksPage(props) {
       <Breadcrumb style={{ fontSize: 20, fontWeight: "bold" }}>
         <Breadcrumb.Item>
           <Link className="link" to={`/`}>
-            Home
+            Dashboard
           </Link>
         </Breadcrumb.Item>
         <Breadcrumb.Item>

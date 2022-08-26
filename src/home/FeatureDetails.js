@@ -30,7 +30,7 @@ const FeatureDetails = {
 
       SELF_OTHER_HEADING: "Follower Following",
       CRUMB_1: {
-        NAME: "Target Users' Dashboard",
+        NAME: "Target Users",
         ACTION: "/level_2"
       },
 
@@ -48,7 +48,7 @@ const FeatureDetails = {
 
       SELF_OTHER_HEADING: "Inactive/Ghost Followers",
       CRUMB_1: {
-        NAME: "Target Users' Dashboard",
+        NAME: "Target Users",
         ACTION: "/level_2"
       },
 
@@ -64,7 +64,7 @@ const FeatureDetails = {
 
       SELF_OTHER_HEADING: "User's Top Liker-Commenter",
       CRUMB_1: {
-        NAME: "Target Users' Dashboard",
+        NAME: "Target Users",
         ACTION: "/level_2"
       },
 
@@ -78,7 +78,7 @@ const FeatureDetails = {
       IS_MOST_USED: false,
       CARD_COLOR: "#479CFF",
       CRUMB_1: {
-        NAME: "Target Users' Dashboard",
+        NAME: "Target Users",
         ACTION: "/level_2"
       }
     },
@@ -89,7 +89,7 @@ const FeatureDetails = {
       IS_MOST_USED: false,
       CARD_COLOR: "#479CFF",
       CRUMB_1: {
-        NAME: "Target Users' Dashboard",
+        NAME: "Target Users",
         ACTION: "/level_2"
       }
     },
@@ -101,7 +101,7 @@ const FeatureDetails = {
       CARD_COLOR: "#479CFF",
 
       CRUMB_1: {
-        NAME: "Target Users' Dashboard",
+        NAME: "Target Users",
         ACTION: "/level_2"
       }
     },
@@ -113,7 +113,7 @@ const FeatureDetails = {
       CARD_COLOR: "#479CFF",
 
       CRUMB_1: {
-        NAME: "Target Users' Dashboard",
+        NAME: "Target Users",
         ACTION: "/level_2"
       }
     },
@@ -125,7 +125,7 @@ const FeatureDetails = {
       CARD_COLOR: "#479CFF",
 
       CRUMB_1: {
-        NAME: "Target Users' Dashboard",
+        NAME: "Target Users",
         ACTION: "/level_2"
       }
     },
