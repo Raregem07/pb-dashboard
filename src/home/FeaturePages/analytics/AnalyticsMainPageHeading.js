@@ -13,10 +13,10 @@ function AnalyticsMainPageHeading(props) {
 
           width: "100%",
           paddingBottom: "4%",
-          backgroundImage: `linear-gradient(to right, ${props.colorCode1} , ${props.colorCode2})`,
+          backgroundImage: "linear-gradient(to right,  #0d98ba, #D6E865)",
 
           paddingLeft: 64,
-          paddingTop: "1%"
+          paddingTop: "7%"
         }}
       >
         {props.heading}

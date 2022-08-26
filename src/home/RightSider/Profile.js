@@ -24,11 +24,12 @@ class Profile extends React.Component {
         style={{
           textAlign: "center",
           backgroundColor: "#002A00",
-          paddingBottom: "1%"
+          paddingBottom: "1%",
+          paddingTop: "8%"
         }}
       >
         <Avatar size={64} src={this.state.viewer.profile_pic_url} />
-        <h1 style={{ color: "white", fontSize: "120%" }}>
+        <h1 style={{ color: "white", fontSize: "120%", paddingTop: "7%" }}>
           {" "}
           {this.state.viewer.username}
         </h1>

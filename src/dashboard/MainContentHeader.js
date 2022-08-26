@@ -8,7 +8,8 @@ function MainContentHeader(props) {
       marginTop: "1%",
       font: "Black 64px/77px Roboto",
       color: "#001529",
-      fontWeight: "bold"
+      fontWeight: "bold",
+      padding: "3%"
     }}>
     </div>
   </React.Fragment>

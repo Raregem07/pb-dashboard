@@ -7,12 +7,11 @@ function AnalyticsMainPageCardOther(props) {
   return (
     <React.Fragment>
       <div
+        className="analyticsMainCard"
         style={{
           width: "90%",
-
-          backgroundColor: props.backgroundColor,
-          borderRadius: 11
-
+          backgroundColor: "#0d98ba",
+          borderRadius: 11,
         }}
       >
         <div
@@ -38,6 +37,12 @@ function AnalyticsMainPageCardOther(props) {
           {props.name}
         </div>
       </div>
+      <style jsx>{`
+        .analyticsMainCard:hover {
+          box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        
+        `}</style>
     </React.Fragment>
   );
 }
