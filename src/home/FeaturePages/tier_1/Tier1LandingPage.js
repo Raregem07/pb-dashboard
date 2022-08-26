@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-constructor */
 import React from 'react';
 import FeaturePageAnalyticsHeading from "../analytics/FeaturePageAnalyticsHeading";
 import FeaturePageAnalyticsNote from "../analytics/FeaturePageAnalyticsNote";

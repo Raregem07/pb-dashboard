@@ -28,21 +28,11 @@ function DashboardCard(props) {
   }
   return <React.Fragment>
     <div className="cardWrapper">
-    <Link
-            className="link"
-            to={`${FeatureDetails.TIER_2.ACTION}`}
-            onClick={() => {
-              ReactGA.event({
-                category: AnalyticsCategoryEnum.MAIN_DASHBOARD_OPTION_CHOSE,
-                action: `analytics`
-              });
-            }}
-          >
+    
       <div className="leftBox" style={{background:"#006601",padding:"15px 30px", marginLeft:"50px", borderRadius:"8px"}}>
         <div>{icon}</div>
         <div style={{fontSize:"20px",fontWeight:"bold",color:"white"}}>{props.title}</div>
       </div>
-      </Link>
       <div>
         <FeatureList
             features={props.features}
@@ -116,6 +106,7 @@ function DashboardCard(props) {
         .leftBox:hover {
           background: #047504 !important;
           box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+          cursor: pointer;
         }
     `}</style>
   </React.Fragment>;

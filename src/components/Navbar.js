@@ -8,6 +8,17 @@ import accountIcon from '../common/images/account_icon.jpg';
 function Navbar() {
 
   const [isDropdown, setIsDropdown] = useState(false);
+
+  const conditionsArray = [
+    "#/", 
+    "#/level_2",
+    "#/level_2/follower_following",
+    "#/analytics/other/likers_commenters_post",
+    "#/analytics/other/hashtag",
+    "#/analytics/similar_account",
+    "#/analytics/other/location",
+    "#/analytics/other/detailed_analysis"
+]
   
   return (
     <nav>
@@ -26,7 +37,7 @@ function Navbar() {
           </a>
         </div>
         <div>
-          <Link className="navlink" to="/" id={ window.location.hash === '#/' ? "focus" : "" }>
+          <Link className="navlink" to="/" id={ conditionsArray.includes(window.location.hash) ? "focus" : "" }>
             DASHBOARD
           </Link>
         </div>

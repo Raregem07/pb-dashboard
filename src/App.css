@@ -71,7 +71,7 @@
 }
 
 .right-sider-main-box {
-    background-color: #FFFFFF;
+    background-color: #CDFFCC;
     background-repeat: no-repeat;
     background-origin: padding-box;
     opacity: 1;
@@ -190,6 +190,7 @@
 
 .link:hover{
     color: black;
+    cursor: default;
 }
 
 .attractive-box-background {
