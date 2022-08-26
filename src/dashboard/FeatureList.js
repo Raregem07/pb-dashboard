@@ -5,7 +5,7 @@ import React from 'react';
 import { Col, Row } from "antd";
 import detailed_user from '../common/images/detailed_users_black.png'
 import followerIcon from '../common/images/follower_following_black.png';
-import hashtagIcon from '../common/images/hashtag.png';
+import hashtagIcon from '../common/images/hashtag_black.png';
 import locationIcon from '../common/images/location.png';
 import likerIcon from '../common/images/post_liker_commenter_black.png';
 import similarIcon from '../common/images/similar_account_black.svg';

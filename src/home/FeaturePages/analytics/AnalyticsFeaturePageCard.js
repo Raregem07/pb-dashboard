@@ -15,8 +15,8 @@ import sleepStories from "../../../common/images/stories_while_you_sleep.png";
 import commonFollower from "../../../common/images/common_followers.png";
 import mostUsedFeatureImg from "../../../common/images/MostUsedImg.png";
 import detailedUsernames from "../../../common/images/driver_license.png";
-import hashtag from "../../../common/images/hashtag_white.png";
-import location from "../../../common/images/location_white_resize.png";
+import hashtag from "../../../common/images/hashtag.png";
+import location from "../../../common/images/location_resize.png";
 import TasksToEngageIcon from "../../../common/icons/TasksToEngageIcon";
 import ConfigurationSettingsIcon from "../../../common/icons/ConfigurationSettingsIcon";
 import CompletedTasksNewIcon from "../../../common/icons/CompletedTasksNewIcon";
@@ -26,6 +26,7 @@ import AnalyticsCategoryEnum from "../../../common/constants/AnalyticsCategoryEn
 import { Link } from "react-router-dom";
 import AnalyseUserLikerCommenterIcon from "../../../common/icons/AnalyseUserLikerCommenterIcon";
 import AnalysePostLikerCommenterIcon from "../../../common/icons/AnalysePostLikerCommenterIcon";
+import postLikerCommenter from "../../../common/images/post_liker_commenter.png";
 import SendEvent from "../../../common/Helpers/SendEvent";
 import followersIcon from '../../../common/images/follower_following.png'; 
 
@@ -49,7 +50,7 @@ function AnalyticsFeaturePageCard(props) {
   } else if (props.identifier === "user_likers_commenters") {
     icon = <AnalyseUserLikerCommenterIcon/>;
   } else if (props.identifier === "post_likers_commenters") {
-    icon = <AnalysePostLikerCommenterIcon/>;
+    icon = <img src={postLikerCommenter} alt="Split Image" height={72} width={72}/>; //<AnalysePostLikerCommenterIcon/>;
   } else if (props.identifier === "best_posts") {
     icon = <BestAndTrendingPostsIcon/>;
   } else if (props.identifier === "related_hashtags") {
