@@ -53,6 +53,7 @@ class ImproveContentFeaturePage extends React.Component {
 
     return (
       <React.Fragment>
+        {/* HERO */}
         <FeaturePageHeading
           backgroundImage={`linear-gradient(to right, ${improveContentDetails.COLOR_CODE_2} , ${improveContentDetails.COLOR_CODE})`}
           text={improveContentDetails.FEATURE_PAGE_HEADING}

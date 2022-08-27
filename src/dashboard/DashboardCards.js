@@ -21,7 +21,7 @@ function DashboardCards(props) {
           <div className="steps">
             Step 1
           </div>
-          {/* <Link
+          <Link
             className="link"
             to={`${FeatureDetails.TIER_2.ACTION}`}
             onClick={() => {
@@ -30,7 +30,7 @@ function DashboardCards(props) {
                 action: `analytics`
               });
             }}
-          > */}
+          >
             <div style={{textAlign: "center"}}>
 
               <DashboardCard
@@ -44,7 +44,7 @@ function DashboardCards(props) {
                 oneIcon={tier2Card.ONE_ICON_AND_POINTS}
               />
             </div>
-          {/* </Link> */}
+          </Link>
         </div>
         {/* <Col span={6} style={{textAlign: "center"}}>
           <div style={{

@@ -17,11 +17,11 @@ class WelcomeContent extends React.Component {
         width: "66%",
         backgroundColor: "white",
         margin: "20px auto 0",
-        fontSize: "155%",
+        fontSize: "145%",
         padding: "1% 1% 1% 2%",
         boxShadow: "0px 3px 6px #00000029",
         borderRadius: 11,
-        font: "Medium 32px/38px Roboto",
+        font: "Medium 27px/33px Roboto",
         color: "black"
       }}>
         <div>

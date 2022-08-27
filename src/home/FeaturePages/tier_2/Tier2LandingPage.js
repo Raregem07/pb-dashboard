@@ -25,8 +25,21 @@ class Tier2LandingPage extends React.Component {
       {/*<FeaturePageAnalyticsNote*/}
       {/*  note={details.FEATURE_PAGE_NOTE}*/}
       {/*/>*/}
+      <div sytle={{background:"#97c4c4"}}>
+      <div style={{
+          fontSize: 44,
+          font: "Black 64px/77px Roboto",
+          fontWeight: "bold",
+          width: "100%",
+          height: 150,
+          backgroundImage: "linear-gradient(to right,  #0d98ba, #D6E865)",
+          paddingLeft: 64,
+          marginTop: 70
+        }}>
+          <h1 style={{color: "#FFFFFF"}}>Target Users</h1>
+        </div>
 
-      <div style={{ marginLeft: "3%", marginTop: "8%" }}>
+      <div style={{ marginLeft: "3%", marginTop: "1%" }}>
         <Breadcrumb style={{ fontSize: "145%", color:"black", fontWeight:"500" }}>
           <Breadcrumb.Item>
             <Link className="link" to={`/`}>
@@ -41,6 +54,7 @@ class Tier2LandingPage extends React.Component {
 
       <div style={{ marginTop: "2%", marginLeft: "2%", marginRight: "1.5%" }}>
         <Tier2FeatureCards/>
+      </div>
       </div>
     </React.Fragment>;
   }

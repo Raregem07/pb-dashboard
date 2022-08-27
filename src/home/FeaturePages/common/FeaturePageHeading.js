@@ -7,11 +7,9 @@ function FeaturePageHeading(props) {
       font: "Black 64px/77px Roboto",
       color: "#FFFFFF",
       fontWeight: "bold",
-
       width: "100%",
       height: 64,
       backgroundImage: props.backgroundImage,
-
       paddingLeft: 64
     }}>
       {props.text}
