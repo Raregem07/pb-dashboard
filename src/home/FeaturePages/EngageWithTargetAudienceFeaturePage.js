@@ -86,7 +86,7 @@ class EngageWithTargetAudienceFeaturePage extends React.Component {
       <Row>
         <Col span={16}>
           <div style={{ marginLeft: 32, marginTop: "1.5%" }}>
-            <Breadcrumb style={{ fontSize: 20, fontWeight: "bold" }}>
+            <Breadcrumb style={{ fontSize: 20, fontWeight: "bold", cursor: "pointer" }}>
               <Breadcrumb.Item>
                 <Link className="link" to={`/`}>
                   Dashboard

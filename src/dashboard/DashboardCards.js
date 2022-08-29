@@ -15,7 +15,7 @@ function DashboardCards(props) {
 
   return (
     <React.Fragment>
-      <div style={{ marginLeft: "2%", marginTop: "2%", marginRight: "2%"}} >
+      <div style={{ marginLeft: "2%", marginRight: "2%"}} >
         
         <div>
           <div className="steps">
@@ -100,7 +100,7 @@ function DashboardCards(props) {
             .steps {
               width: 70%;
               margin: 0 auto;
-              font-size: 25px;
+              font-size: 18px;
               font-weight: bold;
               padding: 15px 0;
             }

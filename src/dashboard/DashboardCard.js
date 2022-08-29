@@ -94,7 +94,7 @@ function DashboardCard(props) {
     <style jsx>{`
         .cardWrapper {
           display: flex;
-          padding: 30px;
+          padding: 15px;
           gap: 100px;
           justify-content: flex-start;
           align-items: center;

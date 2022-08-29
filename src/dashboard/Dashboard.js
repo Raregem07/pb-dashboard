@@ -25,18 +25,19 @@ class Dashboard extends React.Component {
           height={`168`}
         /> */}
         <div style={{
-          fontSize: 44,
+          fontSize: 25,
           font: "Black 64px/77px Roboto",
           fontWeight: "bold",
           width: "100%",
-          height: 150,
+          height: 121,
           backgroundImage: "linear-gradient(to right,  #0d98ba, #D6E865)",
           paddingLeft: 64,
           marginTop: 70
         }}>
           <h1 style={{color: "#FFFFFF"}}>Dashboard</h1>
+          <WelcomeContent />
         </div>
-        <WelcomeContent />
+        
         <DashboardCards />
       </React.Fragment>
     );
