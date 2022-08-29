@@ -44,7 +44,7 @@ class RightSider extends React.Component {
               backgroundColor: "#002A00"
             }}
           >
-            v5.0.0
+            v1.0.0
           </div>
         </div>
         <div>

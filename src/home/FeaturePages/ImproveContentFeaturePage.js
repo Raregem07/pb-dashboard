@@ -53,6 +53,7 @@ class ImproveContentFeaturePage extends React.Component {
 
     return (
       <React.Fragment>
+        {/* HERO */}
         <FeaturePageHeading
           backgroundImage={`linear-gradient(to right, ${improveContentDetails.COLOR_CODE_2} , ${improveContentDetails.COLOR_CODE})`}
           text={improveContentDetails.FEATURE_PAGE_HEADING}
@@ -68,7 +69,7 @@ class ImproveContentFeaturePage extends React.Component {
                 marginLeft: "4%", marginTop: "1.5%"
               }}
             >
-              <Breadcrumb style={{ fontSize: "150%", fontWeight: "bold" }}>
+              <Breadcrumb style={{ fontSize: "110%", fontWeight: "bold", cursor: "pointer" }}>
                 <Breadcrumb.Item>
                   <Link className="link" to={`/`}>
                     Dashboard

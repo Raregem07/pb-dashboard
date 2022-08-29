@@ -133,7 +133,7 @@ function Tier2FeatureCards(props) {
         width: 100%;
         margin: 0 auto;
         grid-gap: 30px;
-        margin-top: 40px;
+        margin-top: -2%;
         padding: 20px 20px 50px;
       }
 

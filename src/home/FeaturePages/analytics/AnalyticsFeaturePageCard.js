@@ -172,6 +172,7 @@ function AnalyticsFeaturePageCard(props) {
       <style jsx>{`
         .pageCard:hover {
           box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+          cursor: pointer;
         }
       `}</style>
     </React.Fragment>
