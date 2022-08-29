@@ -42,7 +42,7 @@ function AnalyticsFeaturePageCard(props) {
   } else if (props.identifier === "fans_and_brats_analysis") {
     icon = <img src={commonFollower} alt="Split Image" height={50} width={50}/>;
   } else if (props.identifier === "follower_following") {
-    icon = <img src={followersIcon} alt="Split Image" height={72} width={72}/>;
+    icon = <img src={followersIcon} alt="Split Image" height={50} width={50}/>;
   } else if (props.identifier === "dead_followers") {
     icon = <DeadFollowerIcon/>;
   } else if (props.identifier === "post_stats") {
@@ -50,7 +50,7 @@ function AnalyticsFeaturePageCard(props) {
   } else if (props.identifier === "user_likers_commenters") {
     icon = <AnalyseUserLikerCommenterIcon/>;
   } else if (props.identifier === "post_likers_commenters") {
-    icon = <img src={postLikerCommenter} alt="Split Image" height={72} width={72}/>; //<AnalysePostLikerCommenterIcon/>;
+    icon = <img src={postLikerCommenter} alt="Split Image" height={50} width={50}/>; //<AnalysePostLikerCommenterIcon/>;
   } else if (props.identifier === "best_posts") {
     icon = <BestAndTrendingPostsIcon/>;
   } else if (props.identifier === "related_hashtags") {
