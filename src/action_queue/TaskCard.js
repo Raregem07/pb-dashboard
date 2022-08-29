@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import { Avatar, Button, Card, Col, Divider, Icon, Row, Tooltip } from "antd";
 import sendNotification from "../common/SendNotification";

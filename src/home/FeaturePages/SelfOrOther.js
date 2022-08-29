@@ -1,3 +1,5 @@
+/* eslint-disable no-useless-constructor */
+/* eslint-disable no-unused-vars */
 import React from "react";
 import AnalyticsMainPageHeading from "./analytics/AnalyticsMainPageHeading";
 import AnalyticsMainPageCards from "./analytics/AnalyticsMainPageCards";
@@ -37,7 +39,7 @@ class SelfOrOther extends React.Component {
                 marginLeft: "4%"
               }}
             >
-              <Breadcrumb style={{ fontSize: "110%", fontWeight: "bold", cursor: "pointer" }}>
+              <Breadcrumb style={{ fontSize: "110%", fontWeight: "bold"}}>
                 <Breadcrumb.Item>
                   <Link className="link" to={`/`}>
                     Dashboard
