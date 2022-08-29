@@ -20,7 +20,7 @@ function TasksPage(props) {
     />
 
     <div style={{ marginLeft: 32, marginTop: 32 }}>
-      <Breadcrumb style={{ fontSize: 20, fontWeight: "bold" }}>
+      <Breadcrumb style={{ fontSize: 20, fontWeight: "bold", cursor: "pointer" }}>
         <Breadcrumb.Item>
           <Link className="link" to={`/`}>
             Dashboard

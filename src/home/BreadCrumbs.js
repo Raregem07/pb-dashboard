@@ -21,7 +21,7 @@ function BreadCrumbs(props) {
     {props.crumbs[props.crumbs.length - 1].name}
   </Breadcrumb.Item>);
   return <React.Fragment>
-    <Breadcrumb style={{ fontSize: 20, fontWeight: "bold", marginLeft: 32 }}>
+    <Breadcrumb style={{ fontSize: 20, fontWeight: "bold", marginLeft: 32, cursor: "pointer" }}>
       {crumbs}
     </Breadcrumb>
   </React.Fragment>

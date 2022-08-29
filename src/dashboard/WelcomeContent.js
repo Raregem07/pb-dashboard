@@ -14,13 +14,14 @@ class WelcomeContent extends React.Component {
   render() {
     return <React.Fragment>
       <div style={{
-        width: "66%",
+        width: "92%",
         backgroundColor: "white",
-        margin: "20px auto 0",
-        fontSize: "145%",
-        padding: "1% 1% 1% 2%",
+        // margin: "20px auto 0",
+        fontSize: "18px",
+        // padding: "1% 1% 1% 2%",
+        padding: "1px 13px",
         boxShadow: "0px 3px 6px #00000029",
-        borderRadius: 11,
+        // borderRadius: 11,
         font: "Medium 27px/33px Roboto",
         color: "black"
       }}>

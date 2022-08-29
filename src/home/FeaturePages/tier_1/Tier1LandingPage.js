@@ -26,7 +26,7 @@ class Tier1LandingPage extends React.Component {
       />
 
       <div style={{ marginLeft: "3%", marginTop: "2%" }}>
-        <Breadcrumb style={{ fontSize: "150%", fontWeight: "bold" }}>
+        <Breadcrumb style={{ fontSize: "110%", fontWeight: "bold", cursor: "pointer" }}>
           <Breadcrumb.Item>
             <Link className="link" to={`/`}>
               Dashboard

@@ -25,7 +25,7 @@ class ToolsLandingPage extends React.Component {
       />
 
       <div style={{ marginLeft: "3%", marginTop: "4%" }}>
-        <Breadcrumb style={{ fontSize: "150%", fontWeight: "bold" }}>
+        <Breadcrumb style={{ fontSize: "150%", fontWeight: "bold", cursor: "pointer" }}>
           <Breadcrumb.Item>
             <Link className="link" to={`/`}>
               Dashboard
