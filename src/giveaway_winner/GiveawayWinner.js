@@ -87,6 +87,7 @@ class GiveawayWinner extends React.Component{
 
   render() {
     return <React.Fragment>
+
       <EnterPost
         help={NeedHelpEnum.GIVEAWAY_WINNER}
         getShortCodeLikeComment={this.getShortCodeLikeComment}

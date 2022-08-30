@@ -38,17 +38,17 @@ class Tier2LandingPage extends React.Component {
           }}>
             <h1 style={{color: "#FFFFFF"}}>Target Users</h1>
             <div
-          style={{
-            width: "93%",
-            padding: "1px 13px",
-            backgroundColor: "white",
-            fontSize: "18px",
-            boxShadow: "0px 3px 6px #00000029",
-            color: "#707070"
-          }}
-        >
-          <div>Description here...</div>
-        </div>
+              style={{
+                width: "93%",
+                padding: "1px 13px",
+                backgroundColor: "white",
+                fontSize: "18px",
+                boxShadow: "0px 3px 6px #00000029",
+                color: "#707070"
+              }}
+            >
+              <div>Description here...</div>
+            </div>
           </div>
 
       <div style={{ marginLeft: "3%", marginTop: "1%" }}>

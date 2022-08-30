@@ -69,7 +69,7 @@ class ImproveContentFeaturePage extends React.Component {
                 marginLeft: "4%", marginTop: "1.5%"
               }}
             >
-              <Breadcrumb style={{ fontSize: "110%", fontWeight: "bold", cursor: "pointer" }}>
+              <Breadcrumb style={{ fontSize: "110%", fontWeight: "bold"}}>
                 <Breadcrumb.Item>
                   <Link className="link" to={`/`}>
                     Dashboard

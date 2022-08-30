@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function BreadCrumbs(props) {
   let crumbs = [<Breadcrumb.Item key="home_crumb">
-    <Link className="link" to={"/"}>
+    <Link className="link" to={"/"} id={window.location.hash === "#/analytics/similar_account" ? "hide" : ""}>
       Dashboard
     </Link>
   </Breadcrumb.Item>].concat(props.crumbs.map(
@@ -21,9 +21,14 @@ function BreadCrumbs(props) {
     {props.crumbs[props.crumbs.length - 1].name}
   </Breadcrumb.Item>);
   return <React.Fragment>
-    <Breadcrumb style={{ fontSize: 20, fontWeight: "bold", marginLeft: 32, cursor: "pointer" }}>
+    <Breadcrumb style={{ fontSize: "110%", fontWeight: "bold", marginLeft: 32}}>
       {crumbs}
     </Breadcrumb>
+    <style jsx>{`
+      #hide {
+        display: none;
+      }
+    `}</style>
   </React.Fragment>
 }
 

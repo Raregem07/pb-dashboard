@@ -1,3 +1,6 @@
+/* eslint-disable import/no-anonymous-default-export */
+/* eslint-disable array-callback-return */
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import { Card, Divider, Spin } from "antd";
 import getCommentersOfAPost from "../common/api_call/new_api_calls/GetCommentersOfAPost";

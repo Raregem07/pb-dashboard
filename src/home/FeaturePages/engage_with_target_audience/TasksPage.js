@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import FeatureDetails from "../../FeatureDetails";
 import FeaturePageHeading from "../common/FeaturePageHeading";
@@ -20,7 +21,7 @@ function TasksPage(props) {
     />
 
     <div style={{ marginLeft: 32, marginTop: 32 }}>
-      <Breadcrumb style={{ fontSize: 20, fontWeight: "bold", cursor: "pointer" }}>
+      <Breadcrumb style={{ fontSize: 20, fontWeight: "bold"}}>
         <Breadcrumb.Item>
           <Link className="link" to={`/`}>
             Dashboard

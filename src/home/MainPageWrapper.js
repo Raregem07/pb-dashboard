@@ -541,6 +541,7 @@ class MainPageWrapper extends React.Component {
         <FeaturePageHeading
           backgroundImage={`linear-gradient(to right, ${details.CARD_COLOR} , ${details.CARD_COLOR})`}
           text={details.MAIN_PAGE_NAME}
+          desc={details.MAIN_PAGE_NOTE}
         />
         {/*<FeaturePageAnalyticsNote note={details.MAIN_PAGE_NOTE}/>*/}
         <br/>
