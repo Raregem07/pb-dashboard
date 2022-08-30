@@ -421,7 +421,7 @@ const FeatureDetails = {
           IS_MOST_USED: true,
           CARD_COLOR: "#3EB2FF",
           MAIN_PAGE_NAME: "Find Similar Accounts",
-          MAIN_PAGE_NOTE: "",
+          MAIN_PAGE_NOTE: "Search and download list of IG users' data for similar accounts.",
           MESSAGE_OBJ: {
             LEVEL: "info",
             MESSAGE: "",
@@ -437,7 +437,7 @@ const FeatureDetails = {
           IS_MOST_USED: true,
           CARD_COLOR: "#3EB2FF",
           MAIN_PAGE_NAME: "From Hashtag",
-          MAIN_PAGE_NOTE: "From hashtag note",
+          MAIN_PAGE_NOTE: "View and download list of IG users for any specific Hashtag.",
           MESSAGE_OBJ: {
             LEVEL: "info",
             MESSAGE: "",
@@ -453,7 +453,7 @@ const FeatureDetails = {
           IS_MOST_USED: false,
           CARD_COLOR: "#3EB2FF",
           MAIN_PAGE_NAME: "From Location",
-          MAIN_PAGE_NOTE: "From location note",
+          MAIN_PAGE_NOTE: "View and download list of IG users' data for any specific Location.",
           MESSAGE_OBJ: {
             LEVEL: "info",
             MESSAGE: "",
