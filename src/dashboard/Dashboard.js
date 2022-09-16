@@ -34,7 +34,7 @@ class Dashboard extends React.Component {
           paddingLeft: 64,
           marginTop: 70
         }}>
-          <h1 style={{color: "#FFFFFF"}}>Dashboard</h1>
+          <h1 style={{color: "#FFFFFF"}}>Dashboard - for Instagram</h1>
           <WelcomeContent />
         </div>
         
