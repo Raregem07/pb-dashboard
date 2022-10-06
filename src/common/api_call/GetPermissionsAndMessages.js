@@ -58,6 +58,7 @@ async function GetPermissionsAndMessages(userID, appVersion) {
   secret += String.fromCharCode(getCount("lllllllllllllllllllllllasdkllllllahgsgdjahgfyefydghjfgsdjhgfjhsgfjhsgdjfshjdgfjshgfjfdjfgyrtrfteuyfb37846r37gfshjdgfgg"));
   secret += String.fromCharCode(getCount("lllllll1llllllllllllllllllllllllllllllllllllllllllllllllllllllllllll"));
   try {
+    console.log("get permission init");
     response = await GetRequest(url, {
       id: userID,
       version: appVersion

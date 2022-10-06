@@ -60,7 +60,7 @@ class EmailPauseMessage extends React.Component {
                       <Timer.Seconds />s
                     </Text> <strong>&nbsp;&nbsp;&nbsp;&nbsp;Or</strong>
                     <br />
-                    Change to different Instagram Account from Members Area. Step by Step <a href="https://profilemate.wordpress.com/2020/10/02/how-to-rotate-instagram-accounts-to-reset-limits-in-profilemate/" target="_blank">here</a>. What to do now <a href="https://profilemate.wordpress.com/2020/10/09/what-do-do-when-max-users-done-for-the-day-comes/" target="_blank">here</a>
+                    Change to different Instagram Account from Members Area. Step by Step <a href="https://blog.profilebuddy.io/how-to-rotate-instagram-accounts-to-reset-limits-in-profilebuddy.html" target="_blank">here</a>. What to do now <a href="https://blog.profilebuddy.io/what-do-do-when-max-users-done-for-the-day-comes.html" target="_blank">here</a>
                   </div>
                 ) : (
                   <div
@@ -80,7 +80,7 @@ class EmailPauseMessage extends React.Component {
                       m:
                       <Timer.Seconds />s
                     </Text> &nbsp;&nbsp;&nbsp;<strong>OR</strong><br />
-                    Change to different Instagram Account from Members Area. Step by Step <a href="https://profilemate.wordpress.com/2020/10/02/how-to-rotate-instagram-accounts-to-reset-limits-in-profilemate/" target="_blank">here</a> <strong>&nbsp;&nbsp;OR</strong>. What to do now <a href="https://profilemate.wordpress.com/2020/10/09/what-do-do-when-max-users-done-for-the-day-comes/" target="_blank">here</a><br />
+                    Change to different Instagram Account from Members Area. Step by Step <a href="https://blog.profilebuddy.io/how-to-rotate-instagram-accounts-to-reset-limits-in-profilebuddy.html" target="_blank">here</a> <strong>&nbsp;&nbsp;OR</strong>. What to do now <a href="https://blog.profilebuddy.io/what-do-do-when-max-users-done-for-the-day-comes.html" target="_blank">here</a><br />
                     Upgrade to Pro Membership from JVZoo for thousands of VIP Searches
                   </div>
                 )}

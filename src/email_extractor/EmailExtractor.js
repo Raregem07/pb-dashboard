@@ -259,7 +259,7 @@ class EmailExtractor extends React.Component {
           </li>
           <br />
           <li>
-            Also <strong>Download usernames which didn't get processed</strong> from below button and rotate the account <a href={"https://profilemate.wordpress.com/2020/10/02/how-to-rotate-instagram-accounts-to-reset-limits-in-profilemate/"} target={"_blank"}> (Step by Step here)</a> and put these usernames there.
+            Also <strong>Download usernames which didn't get processed</strong> from below button and rotate the account <a href={"https://blog.profilebuddy.io/how-to-rotate-instagram-accounts-to-reset-limits-in-profilebuddy.html"} target={"_blank"}> (Step by Step here)</a> and put these usernames there.
             <UnprocessedUsernames
               allUsernames={this.state.users}
               processedUsernames={this.concatDetailedAndEmail()}

@@ -18,17 +18,17 @@ class App extends React.Component {
   // }
 
   async componentDidMount() {
-    let user = await getMainUser();
-    let trackingCode = ApplicationConstants.googleAnalytics.trackingCode;
-    ReactGA.initialize(trackingCode, {
-      debug: false,
-      titleCase: false,
-      gaOptions: {
-        clientId: parseInt(user.viewer.id)
-      },
-      name: user.viewer.username
-    });
-    ReactGA.ga("set", "checkProtocolTask", () => {});
+    // let user = await getMainUser();
+    // let trackingCode = ApplicationConstants.googleAnalytics.trackingCode;
+    // ReactGA.initialize(trackingCode, {
+    //   debug: false,
+    //   titleCase: false,
+    //   gaOptions: {
+    //     clientId: parseInt(user.viewer.id)
+    //   },
+    //   name: user.viewer.username
+    // });
+    // ReactGA.ga("set", "checkProtocolTask", () => {});
   }
 
   render() {
