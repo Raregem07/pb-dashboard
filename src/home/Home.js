@@ -91,15 +91,15 @@ export class Home extends React.Component {
     let mainUser = await getMainUser();
     let userID = mainUser.viewer.id; 
     let username = mainUser.viewer.username;
-
     await GetOrSetValue(DatabaseKeys.CALLS_DATA, {
       level2Calls: 0,
       level3Calls: 0,
       level2AllowedCalls: 100000000,
       level3AllowedCalls: 0
     });
+
     await GetOrSetValue(DatabaseKeys.SADAM_CALLS_LEFT, 0);
-    console.log(userID);
+
     let permissionsExpiryAndMessagesObj = await GetPermissionsAndMessages(
       userID,
       ApplicationConstants.APP_VERSION
@@ -114,6 +114,7 @@ export class Home extends React.Component {
     }
 
     if (!permissionsExpiryAndMessagesObj.isSuccess && permissionsExpiryAndMessagesObj.error === "NO_PERMISSION") {
+      console.log("117");
       sendNotification(NotificationTypeEnum.Failure, `Instagram account @${this.state.username} does not have permission`);
       this.setState({
         firstApiCallDone: true,
@@ -126,6 +127,7 @@ export class Home extends React.Component {
 
 
     if (!permissionsExpiryAndMessagesObj.isSuccess) {
+      console.log("130");
       sendNotification(NotificationTypeEnum.Failure, "Something went wrong");
       this.setState({
         firstApiCallDone: true,
@@ -139,7 +141,6 @@ export class Home extends React.Component {
     clearTimeout(this.timer);
 
     let permissionsExpiryAndMessages = permissionsExpiryAndMessagesObj.value;
-
     await SaveObject(DatabaseKeys.SADAM_CALLS_LEFT, permissionsExpiryAndMessages.detailedCallsRemaining);
     this.setState({
       firstApiCallDone: true,

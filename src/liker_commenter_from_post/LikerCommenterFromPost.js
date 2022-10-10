@@ -281,7 +281,7 @@ class LikerCommenterFromPost extends React.Component {
                 This limit is from instagram and per instagram account. Use a different instagram
                 account to reset daily limit or wait. Step by Step{" "}
                 <a
-                  href={"https://profilemate.wordpress.com/2020/10/02/how-to-rotate-instagram-accounts-to-reset-limits-in-profilemate/"}
+                  href={"https://blog.profilebuddy.io/how-to-rotate-instagram-accounts-to-reset-limits-in-profilebuddy.html"}
                   target="_blank"
                 >
                   here

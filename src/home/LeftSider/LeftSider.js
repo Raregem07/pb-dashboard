@@ -216,8 +216,8 @@ class LeftSider extends React.Component {
     }
 
     return <React.Fragment>
-      <Tooltip title="Click to go to https://profilemate.com" placement="topRight">
-        <a href="https://profilemate.com" target="_blank">
+      <Tooltip title="Click to go to https://www.profilebuddy.io" placement="topRight">
+        <a href="https://www.profilebuddy.io" target="_blank">
           <img
             alt="Grambuddy Logo"
             src={grambuddyLogo}
