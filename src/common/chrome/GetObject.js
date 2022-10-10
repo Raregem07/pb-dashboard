@@ -13,6 +13,7 @@ import OptionsDefaultValue from "../constants/OptionsDefaultValue";
 import MainUserSharedData from "../models/MainUserSharedData";
 
 function GetObject(key) {
+  console.log("@GetObject function:");
   if (process.env.NODE_ENV === "development") {
     let valueToReturn;
     if (key.startsWith("PostsForHashtag_")) {

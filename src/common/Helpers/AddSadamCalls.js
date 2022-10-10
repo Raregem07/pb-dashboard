@@ -7,6 +7,7 @@ import GetOrSetValue from "../store/GetOrSetValue";
 import ApplicationConstants from "../constants/ApplicationConstants";
 
 async function AddSadamCalls(userCount) {
+  console.log("@AddSadamCalls function: userCount =", userCount);
   let sadamCallsLeft = await GetObject(DatabaseKeys.SADAM_CALLS_LEFT);
   if (sadamCallsLeft <= 0) {
     return;

@@ -5,13 +5,14 @@ import AnalyticsCategoryEnum from "../../constants/AnalyticsCategoryEnum";
 import axios from "axios";
 
 async function GetDetailedUserFromUsernamePersonal(username) {
+  console.log("@GetDetailedUserFromUsernamePersonal function: username =", username);
   let url = `https://www.instagram.com/${username}/?__a=1&__d=dis`;
   let response;
   try {
     if (process.env.NODE_ENV === "development") {
       response = await dummyResponse();
     } else {
-      response = await await axios.get(url);
+      response = await axios.get(url);
     }
   } catch (e) {
     // console.log(e, e.response, 'Class: GetDetailedUserFromUsernamePersonal, Function: , Line 16 e.response(): ');

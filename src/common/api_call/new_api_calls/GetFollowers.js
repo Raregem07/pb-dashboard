@@ -11,6 +11,7 @@ import FollowerUser from "../../models/FollowerUser";
 let INSTAGRAM_APP_ID = 936619743392459;
 
 async function getFollowers(userID, nextPage, throwError = false) {
+  console.log("@getFollowers function: userID =", userID, ", nextPage =", nextPage);
   let baseURL = "https://www.instagram.com/graphql/query";
   let params = {
     "query_hash": "c76146de99bb02f6415203be841dd25a",
