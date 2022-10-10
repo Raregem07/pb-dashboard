@@ -9,6 +9,7 @@ class DetailedUser {
     externalURL, mutualConnectionCount, timelineMedia, mutualConnections, id, blockedByViewer,
     businessCategoryName
   ) {
+    console.log("@DetailedUser class constructor:");
     this.biography = biography;
     if (biography) {
       let emailsArrayOrNull = biography.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);

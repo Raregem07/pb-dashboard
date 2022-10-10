@@ -15,7 +15,6 @@ class Account extends React.Component {
     }
   }
 
-
   async componentDidMount() {
     let user = await getMainUser();
     let sadamCallsRemaining = await GetOrSetValue(DatabaseKeys.SADAM_CALLS_LEFT, 1500);

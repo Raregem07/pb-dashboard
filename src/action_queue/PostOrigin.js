@@ -15,7 +15,7 @@ class PostOrigin extends React.Component {
         title="Hashtag - #" + origin.hashtag.name;
     }
     else if (origin.type === UserPostOriginEnum.LOCATION_POST) {
-        title="Location - 📍" + origin.location.title
+        title="Location - 📍" + origin.location.title;
     }
     else if (origin.type === UserPostOriginEnum.SIMILAR_ACCOUNT_FOLLOWER_POST) {
       title = `Follower of ${origin.similarAccount.username}`;

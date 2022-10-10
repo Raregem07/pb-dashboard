@@ -8,6 +8,7 @@ import ApplicationConstants from "../../constants/ApplicationConstants";
 import AnalyticsCategoryEnum from "../../constants/AnalyticsCategoryEnum";
 
 async function GetDetailsFromSadam(usernames, igID, fieldsRequired, failedCount = 0) {
+  console.log("@GetDetailsFromSadam function: usernames =", usernames, ", igID =", igID, " and fieldsRequired =", fieldsRequired)
   let fieldRequiredReq = {
     bio: true,
     is_business_account: true,

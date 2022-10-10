@@ -38,6 +38,7 @@ import GetDetailsFromSadam from "../common/api_call/new_api_calls/GetDetailsFrom
 // sleepStatusChanged, isSleeping,
 class AnalyseUser extends React.Component {
   constructor(props) {
+    console.log("@AnalyseUser class constructor:");
     super(props);
     this.state = {
       userObj: null,
@@ -54,6 +55,7 @@ class AnalyseUser extends React.Component {
   }
 
   getDetailsAboutUser = async (username, searchUser) => {
+    console.log("@getDetailsAboutUser function: username =", username, ", searchUser =", searchUser);
     this.setState({ loading: true });
     let detailedUser = null;
     try {
