@@ -60,6 +60,7 @@ import Account from "../account/Account";
 import ToolsFollowerFollowing from "../tools_follower_following/ToolsFollowerFollowing";
 import Support from "../support/Support";
 import SimilarAccount from "../similar_account/SimilarAccount";
+import MailSupport from "../mail_support/MailSupport";
 
 class MainContent extends React.Component {
   constructor(props) {
@@ -787,6 +788,16 @@ class MainContent extends React.Component {
             render={props => (
               <ErrorBoundary page="/support">
                 <Support {...props} />
+              </ErrorBoundary>
+            )}
+          />
+
+          <Route
+            path={`/mail_support`}
+            exact={true}
+            render={props => (
+              <ErrorBoundary page="/mail_support">
+                <MailSupport {...props} />
               </ErrorBoundary>
             )}
           />

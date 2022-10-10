@@ -1,8 +1,10 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import {Button, Card, Divider, Spin, Typography} from "antd";
 import Faq from "react-faq-component";
 import GetFAQs from "../common/api_call/GetFaqs";
 import ApplicationConstants from "../common/constants/ApplicationConstants";
+import { Link } from "react-router-dom";
 
 const {Title} = Typography;
 
@@ -65,7 +67,7 @@ class Support extends React.Component {
         </Card>;
     }
 
-    return <div style={{marginLeft: "4%", marginTop: "4%"}}>
+    return <div style={{marginLeft: "4%", marginTop: "13%"}}>
       <Title level={4}>Please go through our FAQs first. If they don't answer your question, then only raise the
         ticket.</Title>
       <br/>
@@ -73,7 +75,8 @@ class Support extends React.Component {
       <Divider/>
       <div className="center">
         <Button type="primary">
-          <a href={ApplicationConstants.SUPPORT_LINK} target={"_blank"}>Raise Support Ticket</a>
+          {/* <a href={ApplicationConstants.SUPPORT_LINK} target={"_blank"}>Raise Support Ticket</a> */}
+          <Link to="../mail_support">Raise Support Ticket</Link>
         </Button>
       </div>
 
