@@ -4,15 +4,12 @@ import MainUserSharedData from "../models/MainUserSharedData";
 import DatabaseKeys from "../models/DatabaseKeys";
 
 async function getMainUser() {
-  console.log("@getMainUser function:");
+  console.log("@getMainUser function (GetMainUser.js):");
   let data = await GetObject(DatabaseKeys.LOGGED_IN_USER_DETAILS);
-  console.log("Oooooops: GetObject return value -> ");
   let email = await GetObject(DatabaseKeys.EMAIL);
 
-  console.log("data and email monitoring:");
+  console.log("data and email monitoring: data =", data, ", email =", email);
 
-  console.log(data);
-  console.log(email);
   return new MainUserSharedData(data, email);
 }
 

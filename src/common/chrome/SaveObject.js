@@ -4,7 +4,7 @@ import DatabaseKeys from "../models/DatabaseKeys";
 import MainUserSharedData from "../models/MainUserSharedData";
 
 function SaveObject(key, object) {
-  console.log("@SaveObject function:");
+  console.log("@SaveObject function (SaveObject.js):");
   if (process.env.NODE_ENV === "development") {
     console.log('save object called with key - ', key, 'value', object);
     return new Promise(r => {

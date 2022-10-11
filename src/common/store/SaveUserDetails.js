@@ -4,7 +4,7 @@ import SaveObject from "../chrome/SaveObject";
 import GetOrSetValue from "./GetOrSetValue";
 
 async function SaveUserDetails(username, detailedUserObj) {
-  console.log("@SaveUserDetails function: username =", username, ", detailedUserObj =", detailedUserObj);
+  console.log("@SaveUserDetails function (SaveUserDetails.js): username =", username, ", detailedUserObj =", detailedUserObj);
   let usersData = await GetOrSetValue(DatabaseKeys.USERS_DATA, {});
   if (username in usersData) {
     usersData[username].push(detailedUserObj);

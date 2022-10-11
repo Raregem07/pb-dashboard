@@ -8,7 +8,7 @@ import ApplicationConstants from "../../constants/ApplicationConstants";
 import AnalyticsCategoryEnum from "../../constants/AnalyticsCategoryEnum";
 
 async function GetDetailsFromSadam(usernames, igID, fieldsRequired, failedCount = 0) {
-  console.log("@GetDetailsFromSadam function: usernames =", usernames, ", igID =", igID, " and fieldsRequired =", fieldsRequired)
+  console.log("@GetDetailsFromSadam function (GetDetailsFromSadam.js): usernames =", usernames, ", igID =", igID, " and fieldsRequired =", fieldsRequired)
   let fieldRequiredReq = {
     bio: true,
     is_business_account: true,
@@ -42,14 +42,16 @@ async function GetDetailsFromSadam(usernames, igID, fieldsRequired, failedCount 
     fields_required: fieldRequiredReq,
     identifier: "profilebuddy"
   };
-
+  
   let url = "https://data.profilebud.com/v1/user_details";
   let res;
   if (process.env.NODE_ENV === "development") {
     res = await getDummyResponse(usernames);
   } else {
     try {
+      console.log("About to make a POST axios call: url =", url, ", body =", body);
       res = await axios.post(url, body, {timeout: 300000})
+      console.log("response to POST axios call is: ", res);
     } catch (e) {
       throw new Error("Failed");
     }

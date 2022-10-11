@@ -5,7 +5,7 @@ import AnalyticsCategoryEnum from "../../constants/AnalyticsCategoryEnum";
 import axios from "axios";
 
 async function GetDetailedUserFromUsernamePersonal(username) {
-  console.log("@GetDetailedUserFromUsernamePersonal function: username =", username);
+  console.log("@GetDetailedUserFromUsernamePersonal function (GetDetailedUserFromUsernamePersonal.js): username =", username);
   let url = `https://www.instagram.com/${username}/?__a=1&__d=dis`;
   let response;
   try {

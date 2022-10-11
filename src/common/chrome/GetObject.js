@@ -13,7 +13,7 @@ import OptionsDefaultValue from "../constants/OptionsDefaultValue";
 import MainUserSharedData from "../models/MainUserSharedData";
 
 function GetObject(key) {
-  console.log("@GetObject function:");
+  console.log("@GetObject function (GetObject.js): key =", key);
   if (process.env.NODE_ENV === "development") {
     let valueToReturn;
     if (key.startsWith("PostsForHashtag_")) {
@@ -235,6 +235,7 @@ function GetObject(key) {
     return new Promise((res, rej) => {
       if (key === DatabaseKeys.LOGGED_IN_USER_DETAILS || key === DatabaseKeys.USERS_FOR_ANALYSIS || key === DatabaseKeys.USERS_DATA || key === DatabaseKeys.EMAIL || key === DatabaseKeys.CALLS_DATA || key === DatabaseKeys.FOLLOWER_SAVE_POINTS) {
         chrome.storage.local.get([key], function (result) {
+          console.log("Result of GetObject from storage: result[key] =", result[key]);
           res(result[key]);
         });
       } else {
@@ -243,6 +244,7 @@ function GetObject(key) {
           let loggedInUserID = mainUserData.viewer.id;
           let finalKey = `${key}_${loggedInUserID}`;
           chrome.storage.local.get([finalKey], function (result) {
+            console.log("Result of GetObject from storage: result[finalKey] =", result[finalKey]);
             res(result[finalKey]);
           });
         });

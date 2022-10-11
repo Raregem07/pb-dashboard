@@ -55,7 +55,7 @@ class AnalyseUser extends React.Component {
   }
 
   getDetailsAboutUser = async (username, searchUser) => {
-    console.log("@getDetailsAboutUser function: username =", username, ", searchUser =", searchUser);
+    console.log("@getDetailsAboutUser function (AnalyseUser.js): username =", username, ", searchUser =", searchUser);
     this.setState({ loading: true });
     let detailedUser = null;
     try {
