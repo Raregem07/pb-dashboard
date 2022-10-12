@@ -1,30 +1,77 @@
-import React, { useState } from 'react';
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
-const sendMessage = () => {
-    alert('MESSAGE SENT');
-}
 
 function MailSupport() {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    emailjs.sendForm("service_ulxh8eo","template_r3jg6hk", form.current, "Frcd-ORyHogfFP7Lk")
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
     <>
-        <div style={{margin:"10% auto",padding:"20px"}}>
-            <h2>Submit Ticket</h2>
-            <div>
+        <div style={{margin:"10% auto", width:"50%"}}>
+            <h2 style={{textAlign:"center"}}>Submit Ticket</h2>
+            <form ref={form} onSubmit={sendEmail} style={{display:"flex",flexDirection:"column",justifyContent:"center"}}>
                  <div>
-                    <label htmlFor='subject'>Subject</label>
-                    <input type="text" name='subject' id='subject' />
+                    <div>Name</div>
+                    <input type="text" name='from_name' id='name' required />
                  </div>
                  <div>
-                    <label htmlFor='email'>Email</label>
-                    <input type="text" name='email' className='' />
+                    <div>Email</div>
+                    <input type="email" name='user_email' id='email' required />
                  </div>
                  <div>
-                    <label htmlFor='message'>Message</label>
-                    <input type="text" name='message' id='message' />
+                    <div>Subject</div>
+                    <input type="text" name='subject' id='subject' required />
                  </div>
-            </div>
-            <button type="submit" onClick={sendMessage}></button>
+                 <div>
+                    <div>Message</div>
+                    <textarea name='message' id="message" cols="30" rows="5" required></textarea>
+                 </div>
+                 <button type="submit">Submit</button>
+            </form>
         </div>
+        <style jsx>{`
+          form div div {
+            padding: 10px 0;
+            font-size: 16px;
+            font-weight: 600;
+          }
+          label {
+            margin-top: 15px;
+          }
+
+          input, textarea {
+            width: 100%;
+            outline: none;
+            border: none;
+          }
+
+          input, button {
+            height: 30px;
+          }
+
+          input {
+            padding: 5px;
+          }
+
+          button {
+            margin-top: 15px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+          }
+          `}</style>
     </>
   )
 }
