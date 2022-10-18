@@ -40,7 +40,7 @@ async function GetDetailsFromSadam(usernames, igID, fieldsRequired, failedCount 
     ig_id: igID,
     usernames: usernames,
     fields_required: fieldRequiredReq,
-    identifier: "profilebuddy"
+    identifier: "profilemate"
   };
   
   let url = "https://data.profilebud.com/v1/user_details";
@@ -51,7 +51,7 @@ async function GetDetailsFromSadam(usernames, igID, fieldsRequired, failedCount 
     try {
       console.log("About to make a POST axios call: url =", url, ", body =", body);
       res = await axios.post(url, body, {timeout: 300000})
-      console.log("response to POST axios call is: ", res);
+      console.log("Response to POST axios call is: ", res);
     } catch (e) {
       throw new Error("Failed");
     }

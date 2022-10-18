@@ -63,7 +63,7 @@ class ShortAnalytics extends React.Component {
             textAlign: "center"
           }}
         >
-          Note: Please use a dummy Instagram account and not your main IG Account
+          Note: Please use a dummy Instagram account (recommended) and not your main IG Account
         </div>
       // <div style={{ textAlign: "center" }}>
       //   <div

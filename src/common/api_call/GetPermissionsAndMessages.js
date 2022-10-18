@@ -25,7 +25,7 @@ function getCount(st) {
 }
 
 async function GetPermissionsAndMessages(userID, appVersion) {
-  console.log(userID);
+  console.log("@GetPermissionsAndMessages function (GetPermissionsAndMessages.js): userID =", userID, ", appVersion =", appVersion);
   if (process.env.NODE_ENV === "development") {
     await sleep(100);
     return {
@@ -50,19 +50,20 @@ async function GetPermissionsAndMessages(userID, appVersion) {
   }
 
   // non existing api
-  let url = "https://api.profilemate.com/api/v1/extension/permission";
+  //let url = "https://api.profilemate.com/api/v1/extension/permission";
+  let url = "http://localhost:3500/permission";
   let response;
-
   let secret = "Ahur6HjiPmnRKDid923kdU";
   secret += String.fromCharCode(getCount("2llllll1lllllllllllllllasdkllllllahgsgdjahgfyefydghjfgsdjhgfjhsgfjhsgdjfshjdgfjshgfjfdjfgyrtrfteuyfb37846r37gfshjdgfgg"));
   secret += String.fromCharCode(getCount("lllllllllllllllllllllllasdkllllllahgsgdjahgfyefydghjfgsdjhgfjhsgfjhsgdjfshjdgfjshgfjfdjfgyrtrfteuyfb37846r37gfshjdgfgg"));
   secret += String.fromCharCode(getCount("lllllll1llllllllllllllllllllllllllllllllllllllllllllllllllllllllllll"));
+  console.log("secret =", secret);
   try {
     console.log("get permission init");
     response = await GetRequest(url, {
       id: userID,
       version: appVersion
-    });
+    }, { 'Content-Type': 'application/json' });
   } catch (e) {
     if (e.message === "Request failed with status code 404") {
       return {
@@ -84,9 +85,10 @@ async function GetPermissionsAndMessages(userID, appVersion) {
   }
 
   let keyToHash = userID+secret;
+  console.log("keyToHash = ", keyToHash);
   let expectedSecretToken = sha256(keyToHash);
 
-  if (expectedSecretToken !== response.data.data.secret) {
+  if (expectedSecretToken !== response.data.secret) {
     return {
       isSuccess: false,
       error: "WRONG_HASH",
@@ -94,7 +96,7 @@ async function GetPermissionsAndMessages(userID, appVersion) {
     }
   }
 
-  let pm = response.data.data.subscription;
+  let pm = response.data.subscription;
   if (pm === "BASIC") {
     pm = "NORMAL";
   }
@@ -104,23 +106,23 @@ async function GetPermissionsAndMessages(userID, appVersion) {
     maxDailyEmailLimits = ApplicationConstants.MAX_EMAIL_CALL_LIMITS.PREMIUM
   }
 
-  if (response.data.data.max_daily_email_limits) {
-    maxDailyEmailLimits = response.data.data.max_daily_email_limits
+  if (response.data.max_daily_email_limits) {
+    maxDailyEmailLimits = response.data.max_daily_email_limits
   }
 
   let faq = "# Coming Soon ...";
-  if (response.data.data.faq) {
-    faq = response.data.data.faq
+  if (response.data.faq) {
+    faq = response.data.faq
   }
 
   return {
     isSuccess: true,
     value: {
       permission: pm,
-      detailedCallsRemaining: response.data.data.detailed_calls_remaining,
+      detailedCallsRemaining: response.data.detailed_calls_remaining,
       messages: new PagesMessages(MessagesDefaultValues),
-      mainMessages: response.data.data.messages,
-      maxFreeUsers: response.data.data.free_calls_limit,
+      mainMessages: response.data.messages,
+      maxFreeUsers: response.data.free_calls_limit,
       maxDailyEmailLimits: maxDailyEmailLimits,
       faq: faq
     }

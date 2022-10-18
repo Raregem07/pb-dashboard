@@ -12,6 +12,7 @@ class Profile extends React.Component {
 
   async componentDidMount() {
     let user = await getMainUser();
+    console.log("profile_pic =", user.viewer.profile_pic_url);
     this.setState({ viewer: user.viewer });
   }
 
@@ -28,7 +29,7 @@ class Profile extends React.Component {
           paddingTop: "8%"
         }}
       >
-        <Avatar size={64} src={this.state.viewer.profile_pic_url} />
+        <Avatar size={64} crossOrigin='use-credentials' src={this.state.viewer.profile_pic_url} />
         <h1 style={{ color: "white", fontSize: "120%", paddingTop: "7%" }}>
           {" "}
           {this.state.viewer.username}

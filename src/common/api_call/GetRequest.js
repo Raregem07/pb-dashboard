@@ -14,7 +14,7 @@ async function GetRequest(url, params = null, headers = null) {
     headers: headers
   });
 
-  console.log("Response to GET axios call: ", axiosResp);
+  console.log("Response to GET axios call: ", axiosResp.data);
   return axiosResp;
 
   // return new Promise((res, rej) => {
