@@ -1,1 +1,1 @@
-# pb-chrome-ext
+# pb-dashboard
